@@ -6,7 +6,6 @@
     box-sizing: border-box;
     }
 /*Navigation*/
-
 .nav{
     display: flex;
     justify-content: space-between;
