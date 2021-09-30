@@ -1,0 +1,44 @@
+/*Global Variables*/
+*{
+    /*outline: 2px solid red;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+/*Navigation*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgb(3, 3, 3);
+    height: 50px;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.nav-list{
+    list-style: none;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+.nav-items{
+    display:inline;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    color: #3D3D3D;
+}
+.nav-items:hover{
+    color: green;
+}
+.callto{
+    color: rgb(9, 167, 9);
+    font-weight: bold;
+}
