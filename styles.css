@@ -10,8 +10,9 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    border-bottom:1px solid rgb(3, 3, 3);
-    height: 50px;
+    /*border-bottom:1px solid rgba(3, 3, 3, 0.5);*/
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
 }
 .icon-container{
     display: flex;
@@ -19,8 +20,8 @@
     margin-left: 10%;
 }
 .icon{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 .nav-list{
     list-style: none;
@@ -30,7 +31,6 @@
 }
 .nav-items{
     display:inline;
-    font-weight: 500;
     font-size: 20px;
     padding: 10px;
     color: #3D3D3D;
