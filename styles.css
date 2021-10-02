@@ -5,6 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     }
+:root{
+    /*Pendiente de Definir Variables Color*/
+    --faded-denim: #6E8EAC;
+}
+
 /*Navigation*/
 .nav{
     display: flex;
@@ -41,11 +46,39 @@
     color: rgb(9, 167, 9);
     font-weight: bold;
 }
+
+/* First Section*/
+.working{
+    height: 350px;
+    padding-top: 15px;
+}
+.par,
+.impar {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+.par{
+    background-color: cornflowerblue;
+}
+.impar{
+    background-color: cornsilk;
+}
+.caja{
+    max-width: 400px;
+    padding: 20px;
+}
+
 /*Color Testing*/
 
+.cajacolores{
+    padding: 30px;
+}
 .textsize{
     font-size: 30px;
-    margin: 40px;
+
     text-align: center;
 }
 .fonttitle{
