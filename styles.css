@@ -71,6 +71,50 @@
     padding: 20px;
 }
 
+/* Review*/
+.reviewblock{
+    display: flex;
+    justify-content: center;
+    margin: 0em 10em 1em 10em;
+    gap: 3em;
+}
+.reviewname{
+    font-family: sans-serif;
+    font-size: 1.125em;
+    font-weight: 600;
+    text-align: center;
+    padding: 1em 1em 0em 1em;
+}
+.reviewdate{
+    font-family: sans-serif;
+    font-size: 1.125em;
+    font-style: italic;
+    text-align: center;
+    padding: 0.75em;
+}
+.reviewcontent{
+    border-top: 1px solid #2b3e4d;
+    border-bottom: 1px solid #2b3e4d;
+    font-family: sans-serif;
+    padding: 1em;
+    font-size: 1.125em;
+    min-height: 110px;
+    line-height: 25px;
+}
+.reviewstars{
+    padding: 1em 0em 0em 0em;
+    text-align: center;
+    /*background-color: blue;*/
+}
+.disclaimer{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.reviewimage{
+    height: 50px;
+    display: block;
+    margin:auto;
+}
 /*Color Testing*/
 
 .cajacolores{
@@ -78,7 +122,6 @@
 }
 .textsize{
     font-size: 30px;
-
     text-align: center;
 }
 .fonttitle{
