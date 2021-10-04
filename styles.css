@@ -104,7 +104,7 @@
 .reviewstars{
     padding: 1em 0em 0em 0em;
     text-align: center;
-    /*background-color: blue;*/
+
 }
 .disclaimer{
     text-align: center;
@@ -114,6 +114,12 @@
     height: 50px;
     display: block;
     margin:auto;
+    padding-bottom: 10px;
+}
+/*Color Testing*/
+.footerblock{
+    height: 100px;
+    background-color: burlywood;
 }
 /*Color Testing*/
 
