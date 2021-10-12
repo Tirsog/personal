@@ -8,6 +8,15 @@
 :root{
     /*Pendiente de Definir Variables Color*/
     --faded-denim: #6E8EAC;
+    --main-callto: rgb(9, 167, 9);
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 10px 0 10px 0;
+    
 }
 
 /*Navigation*/
@@ -43,10 +52,30 @@
     color: green;
 }
 .callto{
-    color: rgb(9, 167, 9);
+    color: var(--main-callto);
     font-weight: bold;
 }
-
+/* presentation*/
+.presentation{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+.fotoblock{
+    display: flex;
+    align-items: center;
+    
+}
+.fototirso{
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid grey;
+}
+.presentation-block{
+    width: 50vw;
+}
 /* First Section*/
 .working{
     height: 350px;
