@@ -20,10 +20,16 @@ body{
 }
 
 /*Navigation*/
+.width100{
+    width: 100%;
+
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
-    /*border-bottom:1px solid rgba(3, 3, 3, 0.5);*/
+    margin: 0 auto;
+    border-bottom:1px solid rgba(3, 3, 3, 0.5);
     height: 60px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
 }
