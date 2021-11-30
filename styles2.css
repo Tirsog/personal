@@ -1,0 +1,26 @@
+/*Global Variables*/
+*{
+    /*outline: 2px solid red;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+:root{
+    /*Pendiente de Definir Variables Color*/
+    --faded-denim: #6E8EAC;
+    --main-callto: #FBB03FBB;
+    ;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    background-color: var(--faded-denim);
+    border-radius: 4px;
+    padding: 30px;
+}
+.outline{
+    outline: 2px solid red;
+}
