@@ -14,10 +14,26 @@
     <h1>
         Test Site
     </h1>
-    <script type="text/javascript">
-        var userLang = navigator.languages; /*  || navigator.userLanguage; */
-        alert ("The language is: " + userLang);
-        /*console.log('El idioma del visitante es: ' + userLang);*/
+
+    <div>
+       <p>Hello <span id="user_ip"><span class="icon"><i class="loader"></i></span></span>. The IP you're behind has a country code of <span id="user_countrycode"><span class="icon"><i class="loader"></i></span></span>.</p>
+           <script type="application/javascript">
+            function geoip(json) {
+                var userip = document.getElementById("user_ip");
+                var countrycode = document.getElementById("user_countrycode");
+                userip.textContent = json.ip;
+                countrycode.textContent = json.country_code;
+            }
+        </script>
+        <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+    
+    </div>
+<script type="text/javascript">
+    var userLang = navigator.languages;  || navigator.userLanguage;
+    alert("The language is: " + userLang);
+    console.log('El idioma del visitante es: ' + userLang);
+
+    */
 /*
         var options = {
                 enableHighAccuracy: true,
