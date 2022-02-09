@@ -14,6 +14,34 @@
     <h1>
         Test Site
     </h1>
+    <script type="text/javascript">
+        var userLang = navigator.language  || navigator.userLanguage; 
+        /*alert ("The language is: " + userLang);*/
+        console.log('El idioma del visitante es: ' + userLang);
+
+        var options = {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            };
+
+            function success(pos) {
+                var crd = pos.coords;
+
+                console.log('Your current position is:');
+                console.log(`Country : ${crd.country}`);
+                console.log(`Latitude : ${crd.latitude}`);
+                console.log(`Longitude: ${crd.longitude}`);
+                console.log(`More or less ${crd.accuracy} meters.`);
+            }
+
+            function error(err) {
+                console.warn(`ERROR(${err.code}): ${err.message}`);
+            }
+
+            navigator.geolocation.getCurrentPosition(success, error, options);
+
+        </script>
     <br>
     <ul>
        <li><a href="/reviews">Reviews</a></li> 
