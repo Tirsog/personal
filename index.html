@@ -15,10 +15,10 @@
         Test Site
     </h1>
     <script type="text/javascript">
-        var userLang = navigator.language  || navigator.userLanguage; 
-        /*alert ("The language is: " + userLang);*/
-        console.log('El idioma del visitante es: ' + userLang);
-
+        var userLang = navigator.languages; /*  || navigator.userLanguage; */
+        alert ("The language is: " + userLang);
+        /*console.log('El idioma del visitante es: ' + userLang);*/
+/*
         var options = {
                 enableHighAccuracy: true,
                 timeout: 5000,
@@ -40,7 +40,7 @@
             }
 
             navigator.geolocation.getCurrentPosition(success, error, options);
-
+*/
         </script>
     <br>
     <ul>
