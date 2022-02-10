@@ -48,7 +48,7 @@ span.boton_menu {
 }
 .icon{
     height: 50px;
-    width: auto;
+    width: 137px;
 }
 .nav-items{
     display:inline;
@@ -76,8 +76,8 @@ span.boton_menu {
         min-width: auto;*/
     }   
 }
-    
-/* presentation*/
+/* Body */
+/*Presentation*/
 .presentation{
     display: flex;
     justify-content: center;
