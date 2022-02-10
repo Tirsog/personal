@@ -48,6 +48,7 @@ span.boton_menu {
 }
 .icon{
     height: 50px;
+    width: auto;
 }
 .nav-items{
     display:inline;
