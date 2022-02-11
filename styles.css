@@ -9,7 +9,6 @@
     /*Pendiente de Definir Variables Color*/
     --faded-denim: #6E8EAC;
     --main-callto: #FBB03FBB;
-    ;
 }
 
 body{
@@ -41,10 +40,6 @@ span.boton_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*height: 100%;
-    max-height: 100%;
-    width: 100%;
-    max-width: 100%;*/
 }
 .icon{
     height: 50px;
@@ -57,26 +52,35 @@ span.boton_menu {
     color: #3D3D3D;
 }
 @media only screen and (max-width: 1024px) {
+
 .nav {  
-   max-height: 0;
-    max-width: 0;
+    max-height: 0;
+    max-width: auto;
     overflow: hidden;
-    position: static;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color:#ddd6d1;
+    top: 55px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
 }
 span.boton_menu {
-        display: inline;
-    }
+    display: inline;
+}
 
-    #contenedor_cabecera{
-
-        width: 90%;
-     /*   min-width: auto;
-        margin: auto;
-        max-width: 100%;
-        min-width: auto;*/
-    }   
+#contenedor_cabecera{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    min-width: auto;
+}
 }
 /* Body */
+
 /*Presentation*/
 .presentation{
     display: flex;
@@ -260,7 +264,7 @@ span.boton_menu {
 .contact {
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 500px;
     margin: auto;
     background-color: var(--faded-denim);
     border-radius: 4px;

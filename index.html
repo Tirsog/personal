@@ -13,28 +13,7 @@
 </head>
 
 <body>
-    <!-- elementos del menu -->
-    <!--
-            <div class="menu" id="menu">
-              <ul class="lista_menu">
-                <li>
-                  <a href="#sec_laclinica" onclick="ToggleMenu()">La Clínica</a>
-                </li>
-                <li>
-                  <a href="#sec_servicios" onclick="ToggleMenu()">Servicios</a>
-                </li>
-                <li><a href="#sec_planes" onclick="ToggleMenu()">Planes</a></li>
-                <li><a href="#sec_packs" onclick="ToggleMenu()">Packs</a></li>
-                <li><a href="#sec_equipo" onclick="ToggleMenu()">Equipo</a></li>
-                <li>
-                    <a href="#sec_contacto" onclick="ToggleMenu()">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    -->
+
     <!--Cabecera-->
     <div class="cabecera">
         <div id="contenedor_cabecera">
@@ -42,14 +21,18 @@
             <span class="material-icons boton_menu"> menu </span>
             <nav class="nav" id="togglemenu">
                 <ul>
-                    <li class="nav-items"><a href="#" alt="Servicios">Servicios</a></li>
-                    <li class="nav-items"><a href="#" alt="Registro de Marcas">Registro de Marcas</a></li>
-                    <li class="nav-items"><a href="#" alt="Sobre mí">Sobre mí</a></li>
-                    <li class="nav-items"><a href="#" alt="Blog">Articulos</a></l>
-                    <li class="nav-items"><a href="#" alt="Contacto">Contacto</a></li>
+                    <li class="nav-items"><a href="#" alt="Inicio" onclick="ToggleMenu()">Inicio</a></li>
+                    <li class="nav-items"><a href="#" alt="Servicios" onclick="ToggleMenu()">Servicios</a></li>
+                    <li class="nav-items"><a href="#" alt="Blog" onclick="ToggleMenu()">Articulos</a></l>
+                    <li class="nav-items"><a href="#" alt="Contacto" onclick="ToggleMenu()">Contacto</a></li>
                 </ul>
             </nav>
         </div>
+    </div>
+    
+    <!--<div>
+        <img src="/img/close.svg" alt="Close Button">
+        <img src="/img/hamburger.svg" alt="Hamburger Button">
     </div>
     <!--Presentation-->
     <!--<div class="presentation">
@@ -239,15 +222,15 @@
         </div>
     </div>-->
 <!----------Contact Area---------->
-    <div class="contact">
+   <!-- <div class="contact">
         <form name="contact" method="POST" data-netlify="true">
             <p><label>Nombre <input type="text" name="name" /></label></p>
             <p><label>Email: <input type="email" name="email" /></label></p>
             <p> <label>Mensaje <textarea name="message"></textarea></label></p>
-            <!--<p><label>Añadir Archivo <input type="file" name="picture" /></label></p>-->
+            <p><label>Añadir Archivo <input type="file" name="picture" /></label></p>
             <p><button type="submit">Enviar</button></p>
         </form>
-    </div>
+    </div>-->
 
 </body>
 <!----------Scripts---------->
