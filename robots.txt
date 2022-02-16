@@ -1,0 +1,7 @@
+Sitemap: https://www.tirsog.es/sitemap.xml
+
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow

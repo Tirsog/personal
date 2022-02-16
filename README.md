@@ -1,9 +1,7 @@
 # personal
-Menú principal:
-    Falta Logo y favicon real
-    Falta subir la paleta de colores
-    Falta el degradado del bottom-border
-        Subido el degradado pero le falta asignar el color correcto.
-    Instalar toggle para mobile con JS
 
-Test
+
+
+# Files
+
+1- CNAME: Este archivo es necesario para la configuración de dominio de Netlify ya que tirsog.es está en otro proveedor.
