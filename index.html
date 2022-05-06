@@ -212,6 +212,7 @@
     </div>
     <div><img class="reviewimage" src="img/shopperapproved.jpg"></div>
     <div>
+        
         <p class="disclaimer">All reviews have been collected by <a href="#">Shopper's Approved</a>, an independent
             third party.</p>
     </div>
@@ -244,6 +245,24 @@
 
 </body>
 <!----------Scripts---------->
+<!----------Chatwoot---------->
+<script>
+    (function(d,t) {
+      var BASE_URL="https://chatwoot-test-igerent.herokuapp.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'BJWvC6SwVLZA1ZmcK7UbFkc1',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+<!----------Chatwoot---------->
 <script src="/menu.js"></script>
 
 </html>

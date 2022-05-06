@@ -10,8 +10,7 @@ btn_menu.addEventListener('click', ToggleMenu);
 
 /* muestra el icono de menu o el de cerrar */
 function ToggleMenu() {
-
-
+  
   if (window.matchMedia('only screen and  (max-width: 1024px)').matches) {
 
     //MODO MOVIL
