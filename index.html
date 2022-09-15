@@ -223,13 +223,14 @@
         </div>
     </div>-->
 <!----------Netlify Contact Form---------->
-    <div class="contact">
+    <div class="contactblock">
+        <h2>Escríbeme</h2>
         <form name="contact" method="POST" data-netlify="true">
-            <p><label>Nombre <input type="text" name="name" /></label></p>
-            <p><label>Email: <input type="email" name="email" /></label></p>
-            <p> <label>Mensaje <textarea name="message"></textarea></label></p>
-            <p><label>Añadir Archivo <input type="file" name="picture" /></label></p>
-            <p><button type="submit">Enviar</button></p>
+            <label>Nombre <input type="text" name="name" placeholder="Nombre"/></label>
+            <label>Email: <input type="email" name="email" placeholder="Email" /></label>
+            <label>Mensaje:<textarea name="message" placeholder="Deja tu mensaje."></textarea></label>
+            <label>Añadir Archivo: <input type="file" name="picture" /></label>
+            <button type="submit" class="submit-button">Enviar</button>
         </form>
     </div>
 
