@@ -259,7 +259,7 @@ span.boton_menu {
 .colorfont6 {
   color: #f0d1cd;
 }
-/*Contact Form*/
+/*----------  NETLIFY CONTACT FORM  ----------*/
 form {
   width: 60vw;
   max-width: 500px;
@@ -294,9 +294,6 @@ textarea {
     height: 5em;
 }
 
-/*input:last-of-type {
-    background-color: #03cc90;
-  }*/
 .submit-button {
   display: block;
   width: 60%;
@@ -314,4 +311,26 @@ textarea {
   background-color: #ddd6d1;
   margin-top: 30px;
   padding-top: 30px;
+}
+
+/*----------  FOOTER  ----------*/
+footer{
+    text-align: center;
+    background-color: var(--faded-denim);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    padding: 50px 0 50px 0;
+}
+.subirlink{
+    font-size: 30x;
+    color: #000000;
+    text-decoration: underline;
+}
+.imgblock{
+    padding: 30px 0 30px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
