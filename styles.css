@@ -1,30 +1,27 @@
-/*Global Variables*/
+/*------ Fonts & Colors ------*/
+:root {
+  --raisin-black: #272727;
+  --mango: #F7B801;
+  --carolina-blue: #00A5E0;
+  --dim-gray: #696773;
+  --cultured: #EFF1F3;
+}
+
+/*------ CSS Reset ------*/
+
 * {
-  /*outline: 2px solid red;*/
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  /*Pendiente de Definir Variables Color*/
-  --faded-denim: #6e8eac;
-  --main-callto: #fbb03fbb;
+
+/*------ Revisado ------*/
+
+nav{
+  background-color: var(--raisin-black);
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  margin: 10px 0 10px 0;
-}
-
-h2 {
-  text-align: center;
-}
-
-/*Navigation*/
-
-#contenedor_cabecera {
+nav div{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,29 +29,63 @@ h2 {
   max-width: 1024px;
   min-width: 800px;
 }
-span.boton_menu {
-  display: none;
-  font-size: 50px; /*Testear en movil*/
+
+
+nav > ul{
+  list-style: none;
+  display: inline;
 }
+
+nav > div > ul > li {
+  display: inline;
+  padding: 10px;
+}
+
+nav > div > ul > li > a {
+  text-decoration: none;
+  color: var(--cultured);
+  font-size: 20px;
+}
+nav > div > ul > li > a:hover {
+  text-decoration:underline;
+  color: var(--mango);
+  font-size: 20px;
+}
+
+
+
+
+
+/*------ MIERDA ------*/
+/*
+body {
+  font-family: sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 10px 0 10px 0;
+}
+
+
+/*Navigation*/
+
+#contenedor_cabecera {
+
+}
+
+/*
 .cabecera {
   display: flex;
   align-items: center;
 }
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .icon {
   height: 50px;
   width: 137px;
 }
-.nav-items {
-  display: inline;
-  font-size: 20px;
-  padding: 10px;
-  color: #3d3d3d;
-}
+
+
+*/
+/*
 @media only screen and (max-width: 1024px) {
   .nav {
     max-height: 0;
@@ -85,6 +116,7 @@ span.boton_menu {
 /* Body */
 
 /*Presentation*/
+/*
 .presentation {
   display: flex;
   justify-content: center;
@@ -105,6 +137,7 @@ span.boton_menu {
   max-width: 900px;
 }
 /* First Section*/
+/*
 .working {
   height: 350px;
   padding-top: 15px;
@@ -129,6 +162,7 @@ span.boton_menu {
 }
 
 /* Review*/
+/*
 .reviewblock {
   display: flex;
   justify-content: center;
@@ -173,11 +207,13 @@ span.boton_menu {
   padding-bottom: 10px;
 }
 /*Color Testing*/
+/*
 .footerblock {
   height: 100px;
   background-color: burlywood;
 }
 /*Color Testing*/
+/*
 
 .cajacolores {
   padding: 30px;
@@ -260,6 +296,7 @@ span.boton_menu {
   color: #f0d1cd;
 }
 /*----------  NETLIFY CONTACT FORM  ----------*/
+/*
 form {
   width: 60vw;
   max-width: 500px;
@@ -314,6 +351,7 @@ textarea {
 }
 
 /*----------  FOOTER  ----------*/
+/*
 footer{
     text-align: center;
     background-color: var(--faded-denim);
