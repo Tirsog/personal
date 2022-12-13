@@ -1,0 +1,107 @@
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: var(--backgroundColor1);
+padding: 10px 0 10px 30px;
+border-bottom: 2px solid grey;
+;
+}
+
+nav > img {
+    width: 100px;
+    height: 100px;
+}
+   
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--textFont);
+}
+li a {
+    padding: 10px;
+    color: var(--darkColor);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: var(--highlight);
+/* Tried to add an after instead of the hover */
+/*     content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--highlight);
+    position: absolute;
+    bottom: -4px;
+    left: 20px; */
+}
+
+li {
+    list-style: none;
+    font-size: 25px;
+    padding: 8px 5px 0px 10px;
+
+}
+
+li.welcome {
+    font-weight: bolder;
+}
+
+.icon {
+   height: 100px; 
+   width: 100px;
+   font-size: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    /*
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* positions the icon to the right and center aligns it vertically */
+    /* position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);*/
+    display: none;
+}
+
+    @media screen and (max-width: 768px) {
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline: inherit;
+        }
+
+        ul {
+            display: flex;
+            position: absolute;
+            top: 122px;
+            left:-35px;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        .hide{
+            display: none;
+        }
+        .display{
+            display: block;
+        }
+
+        li {
+            width: 90vw;
+            display: flex;
+           /*  margin: 1px solid gray; */
+        }
+    }
