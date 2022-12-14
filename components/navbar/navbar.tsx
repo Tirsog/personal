@@ -1,6 +1,7 @@
 /* import "./navbar.css"; */
 /* import logo from "../../public/images/vercel.svg"; */
 /* import styles from "../../styles/Navbar.module.css"; */
+import Link from "next/link"
 import { useState } from "react"
 
 function Navbar() {
@@ -32,16 +33,16 @@ function Navbar() {
             </div>
             <ul className={isNavExpanded ? "display" : "hide"}>
                 <li>
-                    <a href="#home">Home</a>
+                    <Link href={"/"}>Home</Link>
                 </li>
                 <li>
-                    <a href="#profile">Profile</a>
+                    <Link href={"/projects"}>Projects</Link>
                 </li>
                 <li>
-                    <a href="#projects"> Projects </a>
+                    <Link href={"/articles"}>Articles</Link>
                 </li>
                 <li className="welcome">
-                    <a href="#user">Contact</a>
+                    <Link href={"/contact"}>Contact</Link>
                 </li>
             </ul>
         </nav>
