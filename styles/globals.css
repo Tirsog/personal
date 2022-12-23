@@ -15,6 +15,14 @@ a {
   box-sizing: border-box;
 }
 
+/* This class is applied to the Layout component: */
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -26,9 +34,16 @@ a {
   }
 }
 
+/*------ Fonts & Colors ------*/
+:root {
+  --raisin-black: #272727;
+  --mango: #F7B801;
+  --carolina-blue: #00A5E0;
+  --dim-gray: #696773;
+  --cultured: #EFF1F3;
+}
 
-/* DELETE BELOW HERE*/
-
+/* Navbar */
 
 nav {
   display: flex;
@@ -37,12 +52,6 @@ nav {
   background-color: var(--backgroundColor1);
   padding: 10px 0 10px 30px;
   border-bottom: 2px solid grey;
-  ;
-}
-
-nav>img {
-  width: 100px;
-  height: 100px;
 }
 
 ul {
@@ -138,4 +147,84 @@ li.welcome {
     display: flex;
     /*  margin: 1px solid gray; */
   }
+}
+
+/* Footer */
+
+
+footer {
+  text-align: center;
+  background-color: var(--faded-denim);
+  width: 100%;
+  padding: 50px 15px 50px 15px;
+}
+
+.subirlink {
+  font-size: 30x;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.imgblock {
+  padding: 30px 0 30px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+/* Contact Form */
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: none;
+  max-width: 100%;
+
+}
+
+input {
+  height: 2.5em;
+}
+
+textarea {
+  height: 5em;
+}
+
+.submit-button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: var(--faded-denim);
+  border: none;
+  font-weight: bold;
+  color: white;
+  min-width: 300px;
+  text-align: center;
+}
+
+.contactblock {
+  background-color: #ddd6d1;
+  margin-top: 30px;
+  padding-top: 30px;
 }

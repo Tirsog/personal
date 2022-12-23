@@ -1,14 +1,17 @@
-/* import "./navbar.css"; */
-/* import logo from "../../public/images/vercel.svg"; */
-/* import styles from "../../styles/Navbar.module.css"; */
 import Link from "next/link"
 import { useState } from "react"
+import Image from "next/image"
 
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
         <nav>
-            {/* <img src={logo} alt="Hands on world"></img> */}
+            <Image
+                src="/images/icon.png"
+                alt="Tirso full logo"
+                width={137}
+                height={50}
+            />
             <div id="mobile">
                 <div className={isNavExpanded ? "hide" : "display"}>
                     <button
