@@ -17,19 +17,21 @@ This file is necessary for the Netlify Domain configuration.
 _General_
 
 -   [x] Created layout component and wrapped the entire \_app
--   [ ] Install UseContext and find out what's the difference with tools like Redux
 -   [x] Assets folder (And find Licensed images and icons)
 -   [x] Customized 404 Page. Redirect useEffect.
 -   [ ] Customized Head for each page.
 -   [ ] Test Error in 404.tsx line 10 in production.
+-   [ ] Generate Sitemap at build: https://github.com/vercel/next.js/tree/canary/examples/with-sitemap
 -   [ ] Test Chatwoot
+-   [ ] Install UseContext and find out what's the difference with tools like Redux
 
 _NavBar_
 
 -   [x] Recreate Nav Component to be a single component.
 -   [x] Make responsive and togglable icons
 -   [x] Add Logo
--   [ ] Load icons as CSV
+-   [x] Hamburger/Close as csv: https://icon-sets.iconify.design/charm/menu-hamburger/ & https://icon-sets.iconify.design/material-symbols/close/
+-   [ ] Improve background
 
 _To Investigate_
 

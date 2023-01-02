@@ -140,12 +140,12 @@ li.welcome {
 
   .display {
     display: block;
+    background-color: white;
   }
 
   li {
     width: 90vw;
     display: flex;
-    /*  margin: 1px solid gray; */
   }
 }
 
@@ -227,4 +227,21 @@ textarea {
   background-color: #ddd6d1;
   margin-top: 30px;
   padding-top: 30px;
+}
+
+
+/* Article */
+/* .articles {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-around;
+} */
+
+.pagecontainer {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
