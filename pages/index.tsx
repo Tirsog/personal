@@ -1,10 +1,11 @@
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
+import Link from "next/link"
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <>
             <Head>
                 <title>Tirso G. | Home</title>
                 <meta name="description" content="Tirso's Personal page" />
@@ -14,78 +15,46 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to{" "}
-                    <a href="https://nextjs.org">Next.js with TypeS! (Index)</a>
-                </h1>
-
-                <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.js</code>
-                </p>
-
-                <div className={styles.grid}>
-                    <a href="https://nextjs.org/docs" className={styles.card}>
-                        <h2>Documentation &rarr;</h2>
+            <div className="pagecontainer">
+                <div className={styles.aboutme}>
+                    <div>
+                        <h1>About Me</h1>
                         <p>
-                            Find in-depth information about Next.js features and
-                            API.
+                            Con experiencia como ecommerce manager. Proyect
+                            manager y SEO
                         </p>
-                    </a>
-
-                    <a href="https://nextjs.org/learn" className={styles.card}>
-                        <h2>Learn &rarr;</h2>
                         <p>
-                            Learn about Next.js in an interactive course with
-                            quizzes!
+                            Project Manager{" "}
+                            <Link href="https://igerent.com">@iGERENT</Link>
                         </p>
-                    </a>
-
-                    <a
-                        href="https://github.com/vercel/next.js/tree/canary/examples"
-                        className={styles.card}
-                    >
-                        <h2>Examples &rarr;</h2>
-                        <p>
-                            Discover and deploy boilerplate example Next.js
-                            projects.
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.card}
-                    >
-                        <h2>Deploy &rarr;</h2>
-                        <p>
-                            Instantly deploy your Next.js site to a public URL
-                            with Vercel.
-                        </p>
-                    </a>
+                        <Link href="/contact">
+                            <button>Contact Me</button>
+                        </Link>
+                    </div>
+                    <Image
+                        src="/images/tirso.png"
+                        width={480}
+                        height={270}
+                        alt="Tirso Garcia"
+                    />
                 </div>
-            </main>
-
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{" "}
-                    <span className={styles.logo}>
+                {/*  */}
+                <div className={styles.article}>
+                    <h2>Latest Article</h2>
+                    <div>
                         <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            width={72}
-                            height={16}
+                            src="/images/posts/signing-man.png"
+                            width={200}
+                            height={200}
+                            alt="Tirso Garcia"
                         />
-                    </span>
-                </a>
-            </footer>
-        </div>
+                        <p>
+                            Steps to access allow a docker container to access
+                            stuff on the host.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }

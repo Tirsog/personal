@@ -49,23 +49,25 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--backgroundColor1);
-  padding: 10px 0 10px 30px;
-  border-bottom: 2px solid grey;
+  background-color: var(--cultured);
+  padding: 10px 200px 10px 200px;
+  /* border-bottom: 2px solid grey; */
 }
 
 ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--textFont);
+
 }
 
 li a {
-  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   color: var(--darkColor);
   text-decoration: none;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 li a:hover {
@@ -85,7 +87,6 @@ li {
   list-style: none;
   font-size: 25px;
   padding: 8px 5px 0px 10px;
-
 }
 
 li.welcome {
@@ -151,10 +152,9 @@ li.welcome {
 
 /* Footer */
 
-
 footer {
   text-align: center;
-  background-color: var(--faded-denim);
+  background-color: var(--cultured);
   width: 100%;
   padding: 50px 15px 50px 15px;
 }
@@ -232,7 +232,8 @@ textarea {
 .pagecontainer {
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
   max-width: 1200px;
   justify-content: space-around;
-  flex-wrap: wrap;
+  outline: 1px solid red;
 }

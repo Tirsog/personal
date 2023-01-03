@@ -13,7 +13,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="contactblock">
+            <div className="contactblock pagecontainer">
                 <h2>Escríbeme</h2>
                 <form name="contact" method="POST" data-netlify="true">
                     <label>
