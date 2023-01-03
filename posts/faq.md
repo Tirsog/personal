@@ -1,8 +1,8 @@
 ---
-title: Frequently Asked Questions
+title: The fights worth Fighting
 description: "Steps to access allow a docker container to access stuff on the host"
-date: "December 28 2022"
-image: "/images/posts/test.png"
+date: "January 02 2023"
+image: "/images/posts/fights-worth-fighting.png"
 ---
 
 ## What keyboard do you use?

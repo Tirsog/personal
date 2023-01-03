@@ -14,12 +14,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Image
-                src="/images/working.svg"
-                width={100}
-                height={400}
-                alt="working person"
-            />
+
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Welcome to{" "}

@@ -2,7 +2,7 @@
 title: How to Test this md
 description: "Steps to access allow a docker container to access stuff on the host"
 date: "December 28 2022"
-image: "/images/posts/test.png"
+image: "/images/posts/signing-man.png"
 ---
 
 1. Enable `route_localnet` for `docker0` interface:
