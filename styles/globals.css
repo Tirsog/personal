@@ -50,7 +50,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: var(--cultured);
-  padding: 10px 200px 10px 200px;
+  padding: 10px 20px 10px 20px;
   /* border-bottom: 2px solid grey; */
 }
 
@@ -94,8 +94,8 @@ li.welcome {
 }
 
 .icon {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ li.welcome {
   ul {
     display: flex;
     position: absolute;
-    top: 122px;
+    top: 80px;
     left: -35px;
     flex-direction: column;
     margin: 0px;
@@ -141,12 +141,14 @@ li.welcome {
 
   .display {
     display: block;
-    background-color: white;
+
   }
 
   li {
     width: 90vw;
     display: flex;
+    background-color: white;
+    border-radius: 1px solid white;
   }
 }
 
@@ -235,5 +237,5 @@ textarea {
   flex-wrap: wrap;
   max-width: 1200px;
   justify-content: space-around;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }

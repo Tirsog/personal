@@ -4,6 +4,7 @@ import matter from "gray-matter"
 import Image from "next/image"
 import { marked } from "marked"
 import Link from "next/link"
+import styles from "../../styles/Article.module.css"
 
 export default function PostPage({
     frontmatter: { title, date, image },
@@ -12,13 +13,15 @@ export default function PostPage({
 }) {
     return (
         <div className="pagecontainer">
-            <h1>{title}</h1>
-            <div>Posted on {date}</div>
-            <Image src={image} width={500} height={500} alt={slug}></Image>
-            <Link href="/articles">
-                <button>Back</button>
-            </Link>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+            <h1 className={styles.header}>{title}</h1>
+            <div className={styles.date}>Posted on {date}</div>
+            <div className={styles.image}>
+                <Image src={image} width={300} height={300} alt={slug}></Image>
+            </div>
+            <div
+                className={styles.body}
+                dangerouslySetInnerHTML={{ __html: marked(content) }}
+            ></div>
         </div>
     )
 }

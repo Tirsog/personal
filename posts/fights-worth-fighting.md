@@ -1,6 +1,6 @@
 ---
 title: The fights worth Fighting
-description: "Steps to access allow a docker container to access stuff on the host"
+description: "Raising children is hard, and it's often a battle. This is a list of recommendations on how to raise your kids, and to decide what battles are actually worth fighting."
 date: "January 02 2023"
 image: "/images/posts/fights-worth-fighting.png"
 ---

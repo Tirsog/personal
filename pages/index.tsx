@@ -31,12 +31,14 @@ export default function Home() {
                             <button>Contact Me</button>
                         </Link>
                     </div>
-                    <Image
-                        src="/images/tirso.png"
-                        width={480}
-                        height={270}
-                        alt="Tirso Garcia"
-                    />
+                    <div className={styles.image}>
+                        <Image
+                            src="/images/tirso.png"
+                            width={300}
+                            height={170}
+                            alt="Tirso Garcia"
+                        />
+                    </div>
                 </div>
                 {/*  */}
                 <div className={styles.article}>
