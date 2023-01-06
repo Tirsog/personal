@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Tirso G. | Home</title>
+                <title> Home | Tirso G.</title>
                 <meta name="description" content="Tirso's Personal page" />
                 <meta
                     name="keywords"
