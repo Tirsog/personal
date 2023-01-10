@@ -11,12 +11,12 @@ export default function NotFound() {
     // Error: Abort fetching component for route: "/"
     // This is due Strict Mode
 
-    useEffect(() => {
+    /*     useEffect(() => {
         setTimeout(() => {
             router.push("/")
         }, 3000)
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, []) */
 
     return (
         <div>
