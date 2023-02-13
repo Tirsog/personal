@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
+import styles from "../styles/Navbar.module.css"
 
-function Navbar() {
+export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
-        <nav>
+        <nav className={styles.nav}>
             <Link href="/">
                 <Image
                     src="/images/icon.png"
@@ -14,10 +15,10 @@ function Navbar() {
                     height={50}
                 />
             </Link>
-            <div id="mobile">
+            <div>
                 <div className={isNavExpanded ? "hide" : "display"}>
                     <button
-                        className="icon"
+                        className={styles.icon}
                         onClick={() => {
                             setIsNavExpanded(!isNavExpanded)
                         }}
@@ -40,9 +41,13 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <div className={isNavExpanded ? "display" : "hide"}>
+                <div
+                    className={`${styles.ul} ${
+                        isNavExpanded ? styles.display : styles.hide
+                    }`}
+                >
                     <button
-                        className="icon"
+                        className={styles.icon}
                         onClick={() => {
                             setIsNavExpanded(!isNavExpanded)
                         }}
@@ -62,22 +67,24 @@ function Navbar() {
                     </button>
                 </div>
             </div>
-            <ul className={isNavExpanded ? "display" : "hide"}>
-                <li>
+            <ul
+                className={`${styles.ul} ${
+                    isNavExpanded ? styles.display : styles.hide
+                }`}
+            >
+                <li className={styles.li}>
                     <Link href={"/"}>Home</Link>
                 </li>
-                <li>
+                <li className={styles.li}>
                     <Link href={"/projects"}>Projects</Link>
                 </li>
-                <li>
+                <li className={styles.li}>
                     <Link href={"/articles"}>Articles</Link>
                 </li>
-                <li className="welcome">
+                <li className={styles.li}>
                     <Link href={"/contact"}>Contact</Link>
                 </li>
             </ul>
         </nav>
     )
 }
-
-export default Navbar
