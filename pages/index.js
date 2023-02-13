@@ -15,46 +15,44 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="pagecontainer">
-                <div className={styles.aboutme}>
-                    <div>
-                        <h1>About Me</h1>
-                        <p>
-                            Con experiencia como ecommerce manager. Proyect
-                            manager y SEO
-                        </p>
-                        <p>
-                            Project Manager{" "}
-                            <Link href="https://igerent.com">@iGERENT</Link>
-                        </p>
-                        <Link href="/contact">
-                            <button>Contact Me</button>
+            <div className="mx-auto flex bg-red-400 p-2">
+                <div>
+                    <h1 className="text-5xl font-bold pr-1">About Me</h1>
+                    <p className="py-6">
+                        Con experiencia como ecommerce manager. Proyect manager
+                        y SEO. Project Manager
+                        <Link className="underline" href="https://igerent.com">
+                            @iGERENT
                         </Link>
-                    </div>
-                    <div className={styles.image}>
-                        <Image
-                            src="/images/tirso.png"
-                            width={300}
-                            height={170}
-                            alt="Tirso Garcia"
-                        />
-                    </div>
+                    </p>
+                    <Link href="/contact">
+                        <button className="text-white bg-mango border-0 py-1 px-6 focus:outline-none hover:bg-carolinaBlue rounded text-lg mt-10 sm:mt-0">
+                            Contact Me
+                        </button>
+                    </Link>
                 </div>
-                {/*  */}
-                <div className={styles.article}>
-                    <h2>Latest Article</h2>
-                    <div>
-                        <Image
-                            src="/images/posts/signing-man.png"
-                            width={200}
-                            height={200}
-                            alt="Tirso Garcia"
-                        />
-                        <p>
-                            Steps to access allow a docker container to access
-                            stuff on the host.
-                        </p>
-                    </div>
+                <Image
+                    className="rounded"
+                    src="/images/tirso.png"
+                    width={450}
+                    height={170}
+                    alt="Tirso G."
+                />
+            </div>
+
+            <div className="bg-blue-300 max-w-xl mg-auto">
+                <h2>Latest Article</h2>
+                <div>
+                    <Image
+                        src="/images/posts/signing-man.png"
+                        width={200}
+                        height={200}
+                        alt="Tirso Garcia"
+                    />
+                    <p>
+                        Steps to access allow a docker container to access stuff
+                        on the host.
+                    </p>
                 </div>
             </div>
         </>

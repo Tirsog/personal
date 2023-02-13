@@ -10,29 +10,47 @@ export default function Home() {
                 <meta name="description" content="Contact page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="contactblock pagecontainer">
-                <h2>Escríbeme</h2>
-                <form name="contact" method="POST" data-netlify="true">
+            <div className="flex flex-col mx-auto w-96">
+                <h2 className="py-6 text-3xl font-bold flex justify-center">
+                    Contact me
+                </h2>
+                <form
+                    className="flex flex-col mx-auto w-96 gap-2 py-2"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                >
                     <label>
-                        Nombre{" "}
-                        <input type="text" name="name" placeholder="Nombre" />
+                        <input
+                            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                        />
                     </label>
+
                     <label>
-                        Email:{" "}
-                        <input type="email" name="email" placeholder="Email" />
+                        <input
+                            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                        />
                     </label>
+
                     <label>
-                        Mensaje:
                         <textarea
+                            className="w-full bg-gray-100 bg-opacity-50  rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             name="message"
-                            placeholder="Deja tu mensaje."
+                            placeholder="Message"
                         ></textarea>
                     </label>
-                    <label>
-                        Añadir Archivo: <input type="file" name="picture" />
-                    </label>
-                    <button type="submit" className="submit-button">
-                        Enviar
+
+                    <button
+                        className="text-white bg-mango py-1 px-6 rounded text-lg mt-10 sm:mt-0"
+                        type="submit"
+                    >
+                        Send
                     </button>
                 </form>
             </div>

@@ -1,22 +1,27 @@
 import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import styles from "../styles/Navbar.module.css"
 
 export default function Navbar() {
+    const { asPath } = useRouter()
     const [isNavExpanded, setIsNavExpanded] = useState(false)
+
     return (
         <nav className={styles.nav}>
-            <Link href="/">
-                <Image
-                    src="/images/icon.png"
-                    alt="Tirso full logo"
-                    width={137}
-                    height={50}
-                />
-            </Link>
+            <div className={styles.logotitle}>
+                <Link href="/">
+                    <Image
+                        src="/images/icon.png"
+                        alt="Logo Tirso Full"
+                        width={137}
+                        height={50}
+                    />
+                </Link>
+            </div>
             <div>
-                <div className={isNavExpanded ? "hide" : "display"}>
+                <div className={isNavExpanded ? styles.hide : styles.display}>
                     <button
                         className={styles.icon}
                         onClick={() => {
@@ -41,11 +46,7 @@ export default function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <div
-                    className={`${styles.ul} ${
-                        isNavExpanded ? styles.display : styles.hide
-                    }`}
-                >
+                <div className={isNavExpanded ? styles.display : styles.hide}>
                     <button
                         className={styles.icon}
                         onClick={() => {
@@ -73,16 +74,54 @@ export default function Navbar() {
                 }`}
             >
                 <li className={styles.li}>
-                    <Link href={"/"}>Home</Link>
+                    <Link
+                        onClick={() => {
+                            setIsNavExpanded(false)
+                        }}
+                        href={"/"}
+                        className={asPath == "/" ? styles.activelink : ""}
+                    >
+                        Home
+                    </Link>
                 </li>
                 <li className={styles.li}>
-                    <Link href={"/projects"}>Projects</Link>
+                    <Link
+                        onClick={() => {
+                            setIsNavExpanded(false)
+                        }}
+                        href={"/projects"}
+                        className={
+                            asPath == "/projects" ? styles.activelink : ""
+                        }
+                    >
+                        Projects
+                    </Link>
                 </li>
                 <li className={styles.li}>
-                    <Link href={"/articles"}>Articles</Link>
+                    <Link
+                        onClick={() => {
+                            setIsNavExpanded(false)
+                        }}
+                        href={"/articles"}
+                        className={
+                            asPath == "/articles" ? styles.activelink : ""
+                        }
+                    >
+                        Articles
+                    </Link>
                 </li>
                 <li className={styles.li}>
-                    <Link href={"/contact"}>Contact</Link>
+                    <Link
+                        onClick={() => {
+                            setIsNavExpanded(false)
+                        }}
+                        href={"/contact"}
+                        className={
+                            asPath == "/contact" ? styles.activelink : ""
+                        }
+                    >
+                        Contact
+                    </Link>
                 </li>
             </ul>
         </nav>

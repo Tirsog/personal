@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -63,70 +67,4 @@ footer {
   display: flex;
   gap: 30px;
   justify-content: center;
-}
-
-
-/* Contact Form */
-
-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-
-label {
-  display: block;
-  margin: 1rem 0;
-}
-
-input,
-textarea {
-  width: 100%;
-  border-radius: 3px;
-  padding: 5px;
-  font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10px;
-  border: none;
-  max-width: 100%;
-
-}
-
-input {
-  height: 2.5em;
-}
-
-textarea {
-  height: 5em;
-}
-
-.submit-button {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: var(--faded-denim);
-  border: none;
-  font-weight: bold;
-  color: white;
-  min-width: 300px;
-  text-align: center;
-}
-
-.contactblock {
-  background-color: #ddd6d1;
-  margin-top: 30px;
-  padding-top: 30px;
-}
-
-.pagecontainer {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  justify-content: space-around;
-  /* outline: 1px solid red; */
 }
