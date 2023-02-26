@@ -10,6 +10,7 @@ export default function Home() {
                 <meta name="description" content="Contact page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            {/* https://www.netlify.com/blog/2020/05/26/add-a-netlify-powered-contact-form-to-your-next-js-site/ */}
             <div className="flex flex-col mx-auto w-96">
                 <h2 className="py-6 text-3xl font-bold flex justify-center">
                     Contact me
