@@ -4,25 +4,21 @@
     justify-content: space-between;
     position: relative;
     background-color: var(--cultured);
-    padding: 0 100px 0 100px;
+    padding: 10px 100px 10px 100px;
 }
 
 .logotitle {
     display: flex;
     align-items: center;
     gap: 30px;
-
 }
 
 .ul {
     display: flex;
-
 }
-
 
 .li a:hover {
     border-bottom: 3px solid var(--mango);
-
 }
 
 .li {
@@ -34,7 +30,6 @@
 .activelink {
     border-bottom: 3px solid;
 }
-
 
 .icon {
     height: 50px;
@@ -73,7 +68,6 @@
         width: 100vw;
         background-color: white;
     }
-
 
     .hide {
         display: none;

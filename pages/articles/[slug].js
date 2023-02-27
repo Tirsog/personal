@@ -4,7 +4,6 @@ import matter from "gray-matter"
 import Image from "next/image"
 import { marked } from "marked"
 import Link from "next/link"
-import styles from "../../styles/Article.module.css"
 import Head from "next/head"
 
 export default function PostPage({
@@ -19,10 +18,12 @@ export default function PostPage({
                 <meta name="description" content={description} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="pagecontainer">
-                <h1 className={styles.header}>{title}</h1>
-                <div className={styles.date}>Posted on {date}</div>
-                <div className={styles.image}>
+            <div className="mx-auto flex flex-col px-20">
+                <h1 className="text-4xl font-bold flex justify-center p-4">
+                    {title}
+                </h1>
+
+                <div className="flex justify-center py-3">
                     <Image
                         src={image}
                         width={300}
@@ -31,9 +32,10 @@ export default function PostPage({
                     ></Image>
                 </div>
                 <div
-                    className={styles.body}
+                    className=""
                     dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
+                <div className="mx-auto py-3">Posted on {date}</div>
             </div>
         </>
     )
