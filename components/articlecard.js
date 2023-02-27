@@ -4,33 +4,27 @@ import styles from "../styles/Articlecard.module.css"
 
 export default function ArticleCard({ post }) {
     return (
-        <div className={styles.pagecontainer}>
-            <div className={styles.wrapper}>
-                <div className={styles.image}>
+        <div className="max-w-md p-4 hover:shadow-2xl m-2 rounded">
+            <div className="flex justify-center py-5">
+                <Link href={`/articles/${post.slug}`}>
                     <Image
+                        className="rounded"
                         src={post.frontmatter.image}
-                        width={100}
-                        height={100}
+                        width={300}
+                        height={300}
                         alt={post.slug}
                     />
-                </div>
-                <Link href={`/articles/${post.slug}`}>
-                    <h2>{post.frontmatter.title}</h2>
-                </Link>
-                <div className={styles.postedon}>
-                    Posted on {post.frontmatter.date}
-                </div>
-
-                <div className={styles.description}>
-                    {post.frontmatter.description}
-                </div>
-                <Link
-                    className={styles.readmore}
-                    href={`/articles/${post.slug}`}
-                >
-                    Read More
                 </Link>
             </div>
+            <Link href={`/articles/${post.slug}`}>
+                <h2 className="text-xl text-center">
+                    {post.frontmatter.title}
+                </h2>
+            </Link>
+            <p className="text-right text-xs font-bold py-2">
+                Posted on {post.frontmatter.date}
+            </p>
+            <div>{post.frontmatter.description}</div>
         </div>
     )
 }

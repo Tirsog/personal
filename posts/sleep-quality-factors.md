@@ -2,7 +2,7 @@
 title: Factors That Can Impact Sleep Quality
 description: "Learn how to optimize your sleep by following a routine that incorporates the most important factors for good sleep quality. Discover the impact of factors such as regular sleep schedule, creating a comfortable sleeping environment, exercise, diet, and light exposure on sleep quality."
 date: "February 26 2023"
-image: "/images/posts/signing-man.png"
+image: "/images/posts/bad-sleeping-man.png"
 ---
 
 ## Factors That Lead to a Good Night Sleep

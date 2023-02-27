@@ -6,15 +6,15 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Create Next App</title>
+                <title>Contact me! | Tirso G.</title>
                 <meta name="description" content="Contact page" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {/* https://www.netlify.com/blog/2020/05/26/add-a-netlify-powered-contact-form-to-your-next-js-site/ */}
-            <div className="flex flex-col mx-auto w-96">
-                <h2 className="py-6 text-3xl font-bold flex justify-center">
+            <div className="flex flex-col mx-auto w-96 py-10">
+                <h1 className="py-6 text-3xl font-bold flex justify-center">
                     Contact me
-                </h2>
+                </h1>
                 <form
                     className="flex flex-col mx-auto w-96 gap-2 py-2"
                     name="contact"
