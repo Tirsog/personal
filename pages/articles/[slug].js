@@ -18,7 +18,7 @@ export default function PostPage({
                 <meta name="description" content={description} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="mx-auto flex flex-col px-20">
+            <div className="mx-auto flex flex-col px-6 max-w-screen-xl">
                 <h1 className="text-4xl font-bold flex justify-center p-4">
                     {title}
                 </h1>
@@ -32,7 +32,7 @@ export default function PostPage({
                     ></Image>
                 </div>
                 <div
-                    className=""
+                    className="parsed"
                     dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
                 <div className="mx-auto py-3">Posted on {date}</div>
