@@ -84,7 +84,7 @@ export default function Navbar() {
                         Home
                     </Link>
                 </li>
-                <li className={styles.li}>
+                {/*                 <li className={styles.li}>
                     <Link
                         onClick={() => {
                             setIsNavExpanded(false)
@@ -96,7 +96,7 @@ export default function Navbar() {
                     >
                         Projects
                     </Link>
-                </li>
+                </li> */}
                 <li className={styles.li}>
                     <Link
                         onClick={() => {
