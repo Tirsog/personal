@@ -7,6 +7,8 @@ image: "/images/posts/bad-sleeping-man.png"
 
 ## Factors That Lead to a Good Night Sleep
 
+Tirso's Note: This is a list I compiled for me and some friends that like me, struggle with sleep. It was compiled with the help of chatGPT 3.5. A new version coming soon!
+
 Unfortunately, we struggle with sleep, and factors such as stress, anxiety, and poor sleep habits can contribute to insomnia and other sleep disorders.
 
 Here's a curated list of what I'm trying to do to improve my sleep:

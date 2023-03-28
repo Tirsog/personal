@@ -42,4 +42,10 @@ Your kids will roll their eyes and resist. You will stumble and stutter. But you
 
 Make your kids live within limits. Learning to live within limits is a valuable life skill. No one lives a life without limitations. And you wouldn't want to. They mature us. If you don't introduce and enforce them, you're hurting your kids. Screen time limits, dietary limits, activity limits, and schedule limits are all good. Teach your kids to embrace them.
 
+### Where is this coming from?
+
 I copied the content from a twitter thread, but lost the link at some point. If someone knows the author please [**let me know**](/contact) so I can add a link and a mention.
+
+###
+
+**Update 27/03/2023**: I found the original post on twitter thanks to some search. The original compilation can be found in the thread by [**David morris**](https://twitter.com/wdmorrisjr/status/1510605658441326606)
