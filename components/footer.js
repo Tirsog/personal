@@ -2,9 +2,9 @@ export default function footer() {
     return (
         <footer>
             <p>
-                <a className="subirlink" href="#top">
-                    Volver al principio
-                </a>
+                More about me:{" "}
+                <a href="https://www.linkedin.com/in/tirsog/">LinkedIn</a> or{" "}
+                <a href="https://github.com/Tirsog">GitHub</a>
             </p>
             <div className="imgblock">
                 <a href="https://www.linkedin.com/in/tirsog/">
@@ -30,11 +30,6 @@ export default function footer() {
                     </svg>
                 </a>
             </div>
-            <p>
-                Más información acerca de mi en mí en{" "}
-                <a href="https://www.linkedin.com/in/tirsog/">LinkedIn</a> o{" "}
-                <a href="https://github.com/Tirsog">GitHub</a>
-            </p>
         </footer>
     )
 }

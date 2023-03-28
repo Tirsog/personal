@@ -20,11 +20,13 @@ export default function Home() {
                     <div className="flex flex-col justify-center">
                         <h1 className="text-5xl font-bold pr-1">About Me</h1>
                         <p className="py-6">
-                            Con experiencia como ecommerce manager. Proyect
-                            manager y SEO. Project Manager. Con experiencia como
-                            ecommerce manager. Proyect manager y SEO. Project
-                            ManagerCon experiencia como ecommerce manager.
-                            Proyect manager y SEO. Project Manager
+                            I´m a highly motivated, well rounded professional
+                            with experience of working in nearly every area of
+                            an e-commerce business. A high performer with an
+                            entrepreneurial spirit, I offer a strong background
+                            in project management, a wide breadth of knowledge
+                            of analytical tools and processes combined with a
+                            practical focus on delivery.{" "}
                             <Link
                                 className="underline"
                                 href="https://igerent.com"
