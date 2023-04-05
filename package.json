@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "gray-matter": "^4.0.3",
