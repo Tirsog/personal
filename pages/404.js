@@ -21,7 +21,8 @@ export default function NotFound() {
     return (
         <div>
             <h1>Oops....</h1>
-            <Link href="/">You are going to be redirected to Home</Link>
+            <p>I couldn`t find what you were looking for.</p>
+            {/* <Link href="/">You are going to be redirected to Home</Link> */}
         </div>
     )
 }
