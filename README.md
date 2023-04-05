@@ -26,7 +26,6 @@ _General_
 examples/with-sitemap
 
 -   [ ] Test Chatwoot
--   [ ] Install UseContext and find out what's the difference with tools like Redux
 
 _NavBar_
 
@@ -35,8 +34,3 @@ _NavBar_
 -   [x] Add Logo
 -   [x] Hamburger/Close as csv: https://icon-sets.iconify.design/charm/menu-hamburger/ & https://icon-sets.iconify.design/material-symbols/close/
 -   [ ] Improve background
-
-_To Investigate_
-
--   [ ] Use of rfc sfc.
--   [ ] TypeOf in children in layout.
