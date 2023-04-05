@@ -19,13 +19,10 @@ async function sendEmail(req, res) {
         <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
       </head>
       <body>
-      <h1>New Contact Form Submission:</h2>
-        <h2>From:</h2>
-        <p>${req.body.fullname}</p>
-        <h2>Email: </h2>
-        <p>${req.body.email}</p>
-        <h2><p>Message:</p></h2>
-              <p>${req.body.message}</p>
+      <h2>New Contact Form Submission:</h2>
+        <b>From: </b><p>${req.body.fullname}</p>
+        <b>Email: </b><p>${req.body.email}</p>
+        <b>Message:</b><br><p>${req.body.message}</p>
       </body>
       </html>`,
         })

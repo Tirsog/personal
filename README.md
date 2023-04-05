@@ -19,7 +19,6 @@ _General_
 -   [x] Created layout component and wrapped the entire \_app
 -   [x] Assets folder (And find Licensed images and icons)
 -   [x] Customized 404 Page. Redirect useEffect.
--   [ ] Test Makefile (add, commit, push): to use "make git m="message""
 -   [ ] Customized Head for each page.
 -   [ ] Test Error in 404.tsx line 10 in production.
 -   [ ] Generate Sitemap at build: https://github.com/vercel/next.js/tree/canary/
