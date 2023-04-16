@@ -1,11 +1,6 @@
 export default function footer() {
     return (
         <footer>
-            <p>
-                More about me:{" "}
-                <a href="https://www.linkedin.com/in/tirsog/">LinkedIn</a> or{" "}
-                <a href="https://github.com/Tirsog">GitHub</a>
-            </p>
             <div className="imgblock">
                 <a href="https://www.linkedin.com/in/tirsog/">
                     <svg
