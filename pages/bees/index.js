@@ -1,6 +1,8 @@
+"use client"
+
 import { useState } from "react"
 
-const BeekeeperCalendar = () => {
+export default function BeekeeperCalendar() {
     const [activeTab, setActiveTab] = useState("flowers")
 
     const flowersData = [
@@ -485,7 +487,7 @@ const BeekeeperCalendar = () => {
                         🐝 UK Beekeeper´s Calendar
                     </h1>
                     <p className="text-sm text-gray-500 mt-2">
-                        Based on A YEAR’S WORK - Z REVISION TOPIC 1.14
+                        Based on A YEAR´S WORK - Z REVISION TOPIC 1.14
                     </p>
                 </div>
 
@@ -651,5 +653,3 @@ const BeekeeperCalendar = () => {
         </div>
     )
 }
-
-export default BeekeeperCalendar
