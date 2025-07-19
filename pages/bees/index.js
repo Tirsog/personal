@@ -9,10 +9,9 @@ export default function BeekeeperCalendar() {
         {
             month: "January",
             flowers: [
-                {
-                    name: "None",
-                    note: "Minimal natural forage - bees rely on stored honey",
-                },
+                { name: "Snowdrop", note: "Early nectar source" },
+                { name: "Winter jasmine", note: "Early winter flowering shrub" },
+                { name: "Mahonia", note: "Fragrant winter flowering shrub" },
             ],
         },
         {
@@ -25,6 +24,8 @@ export default function BeekeeperCalendar() {
                     name: "Salix (Willow)",
                     note: "Excellent early pollen source",
                 },
+                { name: "Winter jasmine", note: "Continuing winter flowering" },
+                { name: "Mahonia", note: "Fragrant early spring flowering" },
             ],
         },
         {
@@ -39,6 +40,7 @@ export default function BeekeeperCalendar() {
                 },
                 { name: "Pears", note: "Early fruit tree nectar" },
                 { name: "Plums", note: "Early fruit tree nectar" },
+                { name: "Mahonia", note: "Late winter/early spring flowering" },
             ],
         },
         {
@@ -187,10 +189,8 @@ export default function BeekeeperCalendar() {
         {
             month: "December",
             flowers: [
-                {
-                    name: "None",
-                    note: "No natural forage - bees rely on stored honey",
-                },
+                { name: "Winter jasmine", note: "Beginning winter flowering" },
+                { name: "Mahonia", note: "Early winter flowering shrub" },
             ],
         },
     ]
