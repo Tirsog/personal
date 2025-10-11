@@ -4,11 +4,11 @@ import styles from "../styles/Articlecard.module.css"
 
 export default function ArticleCard({ post }) {
     return (
-        <div className="max-w-md p-4 hover:shadow-2xl m-2 rounded">
-            <div className="flex justify-center py-5">
+        <div className={styles.card}>
+            <div className={styles.imageContainer}>
                 <Link href={`/articles/${post.slug}`}>
                     <Image
-                        className="rounded"
+                        className={styles.image}
                         src={post.frontmatter.image}
                         width={300}
                         height={300}
@@ -17,11 +17,11 @@ export default function ArticleCard({ post }) {
                 </Link>
             </div>
             <Link href={`/articles/${post.slug}`}>
-                <h2 className="text-xl text-center">
+                <h2 className={styles.title}>
                     {post.frontmatter.title}
                 </h2>
             </Link>
-            <p className="text-right text-xs font-bold py-2">
+            <p className={styles.date}>
                 Posted on {post.frontmatter.date}
             </p>
             <div>{post.frontmatter.description}</div>

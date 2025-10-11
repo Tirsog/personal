@@ -5,6 +5,7 @@ import Image from "next/image"
 import { marked } from "marked"
 import Link from "next/link"
 import Head from "next/head"
+import styles from "../../styles/Article.module.css"
 
 export default function PostPage({
     frontmatter: { title, description, date, image },
@@ -14,16 +15,16 @@ export default function PostPage({
     return (
         <>
             <Head>
-                <title>{title} | Tirso G.</title>
+                <title>{`${title} | Tirso G.`}</title>
                 <meta name="description" content={description} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="mx-auto flex flex-col px-6 max-w-screen-xl">
-                <h1 className="text-4xl font-bold flex justify-center p-4">
+            <div className={styles.container}>
+                <h1 className={styles.title}>
                     {title}
                 </h1>
 
-                <div className="flex justify-center py-3">
+                <div className={styles.imageContainer}>
                     <Image
                         src={image}
                         width={300}
@@ -35,7 +36,7 @@ export default function PostPage({
                     className="parsed"
                     dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
-                <div className="mx-auto py-3">Posted on {date}</div>
+                <div className={styles.date}>Posted on {date}</div>
             </div>
         </>
     )

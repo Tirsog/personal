@@ -1,0 +1,228 @@
+.pageContainer {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+    padding: 1rem;
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.headerTitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.headerSubtitle {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+.tabs {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.tabsInner {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.tab {
+    flex: 1;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.tabInactive {
+    color: #4b5563;
+    background-color: transparent;
+}
+
+.tabInactive:hover {
+    background-color: #f9fafb;
+}
+
+.tabActiveFlowers {
+    background: linear-gradient(90deg, #fbbf24 0%, #f97316 100%);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tabActiveBeekeeper {
+    background: linear-gradient(90deg, #3b82f6 0%, #9333ea 100%);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.cardHeaderFlowers {
+    background: linear-gradient(90deg, #fbbf24 0%, #f97316 100%);
+    padding: 1rem;
+}
+
+.cardHeaderBeekeeper {
+    background: linear-gradient(90deg, #3b82f6 0%, #9333ea 100%);
+    padding: 1rem;
+}
+
+.cardHeaderTitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.cardBody {
+    padding: 1rem;
+}
+
+.flowerTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.flowerTag {
+    display: inline-block;
+    background-color: #1f2937;
+    color: white;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.beekeeperGrid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .beekeeperGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.section {
+    padding: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.listItem {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #374151;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bulletWork {
+    color: #3b82f6;
+    margin-right: 0.5rem;
+}
+
+.bulletColony {
+    color: #10b981;
+    margin-right: 0.5rem;
+}
+
+.forageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.forageTag {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #92400e;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 9999px;
+}
+
+.note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 0.5rem;
+}
+
+.noteText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #92400e;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #4b5563;
+}
+
+.footerText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}

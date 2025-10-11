@@ -12,19 +12,16 @@
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
+    "eslint-config-next": "^15.5.4",
     "gray-matter": "^4.0.3",
     "marked": "^4.2.5",
-    "next": "13.0.6",
+    "next": "^15.5.4",
     "next-sitemap": "^4.0.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.14",
-    "@types/react": "^18.0.26",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6"
+    "@types/react": "^18.0.26"
   }
 }

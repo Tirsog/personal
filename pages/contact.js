@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Contact.module.css"
 import { useState } from "react"
 
 export default function Contact() {
@@ -45,20 +45,19 @@ export default function Contact() {
 
             {/* Inicio Form Sendgrid */}
 
-            <h1 className="py-6 text-3xl font-bold flex justify-center">
+            <h1 className={styles.title}>
                 Send me a message
             </h1>
             <form
                 onSubmit={handleSubmit}
-                className="flex flex-col mx-auto w-96 gap-2 py-4"
-                /* className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500" */
+                className={styles.form}
             >
                 <label
                     htmlFor="fullname"
-                    className="text-gray-500 font-light mt-8 dark:text-gray-50"
+                    className={styles.label}
                 >
                     Full name{" "}
-                    <span className="text-red-500 dark:text-gray-50">*</span>
+                    <span className={styles.labelRequired}>*</span>
                 </label>
                 <input
                     type="text"
@@ -67,14 +66,14 @@ export default function Contact() {
                         setFullname(e.target.value)
                     }}
                     name="fullname"
-                    className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+                    className={styles.input}
                 />
 
                 <label
                     htmlFor="email"
-                    className="text-gray-500 font-light mt-4 dark:text-gray-50"
+                    className={styles.label}
                 >
-                    E-mail <span className="text-red-500">*</span>
+                    E-mail <span className={styles.labelRequired}>*</span>
                 </label>
                 <input
                     type="email"
@@ -83,14 +82,14 @@ export default function Contact() {
                     onChange={(e) => {
                         setEmail(e.target.value)
                     }}
-                    className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+                    className={styles.input}
                 />
 
                 <label
                     htmlFor="subject"
-                    className="text-gray-500 font-light mt-4 dark:text-gray-50"
+                    className={styles.label}
                 >
-                    Subject <span className="text-red-500">*</span>
+                    Subject <span className={styles.labelRequired}>*</span>
                 </label>
                 <input
                     type="text"
@@ -99,14 +98,14 @@ export default function Contact() {
                     onChange={(e) => {
                         setSubject(e.target.value)
                     }}
-                    className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+                    className={styles.input}
                 />
 
                 <label
                     htmlFor="message"
-                    className="text-gray-500 font-light mt-4 dark:text-gray-50"
+                    className={styles.label}
                 >
-                    Message <span className="text-red-500">*</span>
+                    Message <span className={styles.labelRequired}>*</span>
                 </label>
                 <textarea
                     name="message"
@@ -114,13 +113,13 @@ export default function Contact() {
                     onChange={(e) => {
                         setMessage(e.target.value)
                     }}
-                    className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+                    className={styles.textarea}
                 ></textarea>
 
-                <div className="flex flex-row items-center justify-start content-center">
+                <div className={styles.buttonContainer}>
                     <button
                         type="submit"
-                        className="px-10 mt-8 py-2  bg-mango text-gray-50 font-bold rounded-md text-lg flex flex-row items-center"
+                        className={styles.button}
                     >
                         Submit
                         {/*                         <svg

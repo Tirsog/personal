@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+    gap: 1.25rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sectionInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    padding-right: 0.25rem;
+}
+
+.description {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .section {
+        max-width: 80rem;
+        flex-direction: row;
+    }
+}

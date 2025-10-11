@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import styles from "../../styles/Bees.module.css"
 
 export default function BeekeeperCalendar() {
     const [activeTab, setActiveTab] = useState("flowers")
@@ -479,37 +480,37 @@ export default function BeekeeperCalendar() {
     ]
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
-            <div className="max-w-6xl mx-auto">
+        <div className={styles.pageContainer}>
+            <div className={styles.container}>
                 {/* Header */}
-                <div className="text-center mb-8 bg-white rounded-2xl p-8 shadow-lg">
-                    <h1 className="text-2xl font-bold text-gray-800 mb-4">
+                <div className={styles.header}>
+                    <h1 className={styles.headerTitle}>
                         🐝 UK Beekeeper´s Calendar
                     </h1>
-                    <p className="text-sm text-gray-500 mt-2">
+                    <p className={styles.headerSubtitle}>
                         Based on A YEAR´S WORK - Z REVISION TOPIC 1.14
                     </p>
                 </div>
 
                 {/* Tabs */}
-                <div className="bg-white rounded-xl p-2 shadow-lg mb-6">
-                    <div className="flex space-x-1">
+                <div className={styles.tabs}>
+                    <div className={styles.tabsInner}>
                         <button
                             onClick={() => setActiveTab("flowers")}
-                            className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-all duration-200 ${
+                            className={`${styles.tab} ${
                                 activeTab === "flowers"
-                                    ? "bg-gradient-to-r from-yellow-400 to-orange-500 text-white shadow-md"
-                                    : "text-gray-600 hover:bg-gray-50"
+                                    ? styles.tabActiveFlowers
+                                    : styles.tabInactive
                             }`}
                         >
                             🌸 Bee Forage Flowers
                         </button>
                         <button
                             onClick={() => setActiveTab("beekeeper")}
-                            className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-all duration-200 ${
+                            className={`${styles.tab} ${
                                 activeTab === "beekeeper"
-                                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
-                                    : "text-gray-600 hover:bg-gray-50"
+                                    ? styles.tabActiveBeekeeper
+                                    : styles.tabInactive
                             }`}
                         >
                             🧑‍🌾 Beekeeper´s Year
@@ -519,24 +520,24 @@ export default function BeekeeperCalendar() {
 
                 {/* Flowers Tab Content */}
                 {activeTab === "flowers" && (
-                    <div className="space-y-4">
+                    <div className={styles.content}>
                         {flowersData.map((monthData) => (
                             <div
                                 key={monthData.month}
-                                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                                className={styles.card}
                             >
-                                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 p-4">
-                                    <h2 className="text-2xl font-bold text-white">
+                                <div className={styles.cardHeaderFlowers}>
+                                    <h2 className={styles.cardHeaderTitle}>
                                         {monthData.month}
                                     </h2>
                                 </div>
-                                <div className="p-4">
-                                    <div className="flex flex-wrap gap-2">
+                                <div className={styles.cardBody}>
+                                    <div className={styles.flowerTags}>
                                         {monthData.flowers.map(
                                             (flower, index) => (
                                                 <span
                                                     key={index}
-                                                    className="inline-block bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-medium"
+                                                    className={styles.flowerTag}
                                                 >
                                                     {flower.name}
                                                 </span>
@@ -551,32 +552,32 @@ export default function BeekeeperCalendar() {
 
                 {/* Beekeeper Tab Content */}
                 {activeTab === "beekeeper" && (
-                    <div className="space-y-4">
+                    <div className={styles.content}>
                         {beekeeperData.map((monthData) => (
                             <div
                                 key={monthData.month}
-                                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                                className={styles.card}
                             >
-                                <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4">
-                                    <h2 className="text-2xl font-bold text-white">
+                                <div className={styles.cardHeaderBeekeeper}>
+                                    <h2 className={styles.cardHeaderTitle}>
                                         {monthData.month}
                                     </h2>
                                 </div>
-                                <div className="p-6">
-                                    <div className="grid gap-6 lg:grid-cols-3">
+                                <div className={styles.section}>
+                                    <div className={styles.beekeeperGrid}>
                                         {/* Work Section */}
-                                        <div className="lg:col-span-1">
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                        <div>
+                                            <h3 className={styles.sectionTitle}>
                                                 🔧 Work by Beekeeper
                                             </h3>
-                                            <ul className="space-y-2">
+                                            <ul className={styles.list}>
                                                 {monthData.work.map(
                                                     (task, index) => (
                                                         <li
                                                             key={index}
-                                                            className="text-sm text-gray-700 flex items-start"
+                                                            className={styles.listItem}
                                                         >
-                                                            <span className="text-blue-500 mr-2">
+                                                            <span className={styles.bulletWork}>
                                                                 •
                                                             </span>
                                                             {task}
@@ -587,18 +588,18 @@ export default function BeekeeperCalendar() {
                                         </div>
 
                                         {/* Colony State Section */}
-                                        <div className="lg:col-span-1">
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                        <div>
+                                            <h3 className={styles.sectionTitle}>
                                                 🐝 State of Colony
                                             </h3>
-                                            <ul className="space-y-2">
+                                            <ul className={styles.list}>
                                                 {monthData.colony.map(
                                                     (state, index) => (
                                                         <li
                                                             key={index}
-                                                            className="text-sm text-gray-700 flex items-start"
+                                                            className={styles.listItem}
                                                         >
-                                                            <span className="text-green-500 mr-2">
+                                                            <span className={styles.bulletColony}>
                                                                 •
                                                             </span>
                                                             {state}
@@ -609,16 +610,16 @@ export default function BeekeeperCalendar() {
                                         </div>
 
                                         {/* Forage Section */}
-                                        <div className="lg:col-span-1">
-                                            <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                        <div>
+                                            <h3 className={styles.sectionTitle}>
                                                 🌺 Local Bee Forage
                                             </h3>
-                                            <div className="flex flex-wrap gap-2">
+                                            <div className={styles.forageContainer}>
                                                 {monthData.forage.map(
                                                     (plant, index) => (
                                                         <span
                                                             key={index}
-                                                            className="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full"
+                                                            className={styles.forageTag}
                                                         >
                                                             {plant}
                                                         </span>
@@ -630,8 +631,8 @@ export default function BeekeeperCalendar() {
 
                                     {/* Note Section */}
                                     {monthData.note && (
-                                        <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                                            <p className="text-sm text-amber-800">
+                                        <div className={styles.note}>
+                                            <p className={styles.noteText}>
                                                 <strong>Note:</strong>{" "}
                                                 {monthData.note}
                                             </p>
@@ -644,8 +645,8 @@ export default function BeekeeperCalendar() {
                 )}
 
                 {/* Footer */}
-                <div className="text-center mt-12 text-gray-600">
-                    <p className="text-sm">
+                <div className={styles.footer}>
+                    <p className={styles.footerText}>
                         Let me know if there are any issues with this page.
                     </p>
                 </div>

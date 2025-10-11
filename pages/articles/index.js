@@ -5,10 +5,11 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import ArticleCard from "/components/articlecard"
+import styles from "../../styles/Articles.module.css"
 
 export default function Articles({ posts }) {
     return (
-        <div className="articles">
+        <div>
             <Head>
                 <title>Articles | Tirso G.</title>
                 <meta
@@ -17,11 +18,11 @@ export default function Articles({ posts }) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="mx-auto p-4 max-w-screen-xl">
-                <h1 className="py-6 text-4xl font-bold flex justify-center">
+            <div className={styles.container}>
+                <h1 className={styles.title}>
                     Articles and other stuff I have written
                 </h1>
-                <div className="flex flex-wrap">
+                <div className={styles.grid}>
                     {posts.map((post, index) => (
                         <ArticleCard post={post} key={post.slug} />
                     ))}

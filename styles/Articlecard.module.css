@@ -1,29 +1,37 @@
-.wrapper {
-    padding: 20px;
-    max-width: 500px;
-    /*     outline: 1px solid black; */
+.card {
+    max-width: 28rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s;
 }
 
+.card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
 
-.image {
-    border-radius: 5px;
+.imageContainer {
     display: flex;
     justify-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
-.postedon {
-    font-weight: bold;
-    font-size: 12px;
+.image {
+    border-radius: 0.25rem;
 }
 
-.description {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
 }
 
-.readmore {
-    font-size: small;
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: underline;
+.date {
+    text-align: right;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
