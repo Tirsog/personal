@@ -1,11 +1,9 @@
 import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
+import styles from "../../styles/Articles.module.css"
+import ArticlesList from "../../components/articleList/ArticlesList"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import ArticleCard from "/components/articlecard"
-import styles from "../../styles/Articles.module.css"
 
 export default function Articles({ posts }) {
     return (
@@ -19,32 +17,21 @@ export default function Articles({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.container}>
-                <h1 className={styles.title}>
-                    Articles and other stuff I have written
-                </h1>
-                <div className={styles.grid}>
-                    {posts.map((post, index) => (
-                        <ArticleCard post={post} key={post.slug} />
-                    ))}
-                </div>
+                <h1 className={styles.title}>Articles</h1>
+                <ArticlesList posts={posts} />
             </div>
         </div>
     )
 }
 
 export async function getStaticProps() {
-    // Get files from the posts directory
     const files = fs.readdirSync(path.join("posts"))
-    // Get slkuf and frontmatter from posts
     const posts = files.map((filename) => {
-        // Create slug and replace .md extension
         const slug = filename.replace(".md", "")
-        // Get frontmatter (Content of the MD)
         const markdownWithMeta = fs.readFileSync(
             path.join("posts", filename),
             "utf-8"
         )
-
         const { data: frontmatter } = matter(markdownWithMeta)
 
         return {
@@ -54,6 +41,6 @@ export async function getStaticProps() {
     })
 
     return {
-        props: { posts: posts },
+        props: { posts },
     }
 }

@@ -20,9 +20,7 @@ export default function PostPage({
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.container}>
-                <h1 className={styles.title}>
-                    {title}
-                </h1>
+                <h1 className={styles.title}>{title}</h1>
 
                 <div className={styles.imageContainer}>
                     <Image
