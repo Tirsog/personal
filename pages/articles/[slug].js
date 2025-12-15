@@ -22,14 +22,16 @@ export default function PostPage({
             <div className={styles.container}>
                 <h1 className={styles.title}>{title}</h1>
 
-                <div className={styles.imageContainer}>
-                    <Image
-                        src={image}
-                        width={300}
-                        height={300}
-                        alt={slug}
-                    ></Image>
-                </div>
+                {image && (
+                    <div className={styles.imageContainer}>
+                        <Image
+                            src={image}
+                            width={300}
+                            height={300}
+                            alt={slug}
+                        ></Image>
+                    </div>
+                )}
                 <div
                     className="parsed"
                     dangerouslySetInnerHTML={{ __html: marked(content) }}
