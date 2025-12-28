@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f5efe0;
 }
 
 a {
@@ -13,13 +14,6 @@ a {
 
 * {
     box-sizing: border-box;
-}
-
-/* This class is applied to the Layout component: */
-
-.content {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,55 +27,207 @@ a {
     }
 }
 
-/*------ Fonts & Colors ------*/
-:root {
-    --raisin-black: #272727;
-    --mango: #f7b801;
-    --carolina-blue: #00a5e0;
-    --dim-gray: #696773;
-    --cultured: #eff1f3;
-}
-
 /*------ Parsed Styles ------*/
 /* These styles are only used for the parsed Markdown for Articles.*/
 /* If you use double slash comment "//" the first style wont work. */
 .parsed h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    padding: 10px 0 10px 0;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .parsed h3 {
     font-size: 1.25rem;
-    line-height: 2.25rem;
-    padding: 10px 0 10px 0;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
 }
 
-.parsed ul {
-    padding-left: 20px;
+.parsed h4 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #4b5563;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
+
+.parsed p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 1.25rem;
+}
+
+.parsed a {
+    color: #8b6950;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #a0826d;
+    transition: all 0.2s ease;
+}
+
+.parsed a:hover {
+    color: #6b4930;
+    border-bottom-color: #8b6950;
+}
+
+.parsed ul,
+.parsed ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #374151;
+}
+
 .parsed li {
-    list-style-type: circle;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
 }
 
-/* Footer */
-
-footer {
-    text-align: center;
-    background-color: var(--cultured);
-    width: 100%;
-    padding: 50px 15px 50px 15px;
+.parsed ul li {
+    list-style-type: disc;
 }
 
-.subirlink {
-    font-size: 30x;
-    color: #000000;
-    text-decoration: underline;
+.parsed ol li {
+    list-style-type: decimal;
 }
 
-.imgblock {
-    padding: 30px 0 30px 0;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+.parsed blockquote {
+    border-left: 3px solid #a0826d;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.parsed code {
+    background-color: rgba(139, 105, 80, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    color: #8b6950;
+}
+
+.parsed pre {
+    background-color: rgba(139, 105, 80, 0.05);
+    border: 1px solid rgba(139, 105, 80, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+}
+
+.parsed pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #374151;
+}
+
+.parsed hr {
+    border: none;
+    border-top: 1px solid rgba(139, 105, 80, 0.2);
+    margin: 2rem 0;
+}
+
+.parsed strong {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.parsed em {
+    font-style: italic;
+    color: #4b5563;
+}
+
+@media (max-width: 640px) {
+    .parsed h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .parsed h3 {
+        font-size: 1.125rem;
+        margin-top: 1.5rem;
+    }
+
+    .parsed h4 {
+        font-size: 1rem;
+    }
+
+    .parsed p {
+        font-size: 0.9375rem;
+    }
+
+    .parsed ul,
+    .parsed ol {
+        padding-left: 1.25rem;
+    }
+
+    .parsed pre {
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .parsed blockquote {
+        padding-left: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .parsed h2,
+    .parsed h3,
+    .parsed h4,
+    .parsed p,
+    .parsed ul,
+    .parsed ol,
+    .parsed strong {
+        color: #e5e7eb;
+    }
+
+    .parsed h3 {
+        color: #d1d5db;
+    }
+
+    .parsed h4,
+    .parsed em {
+        color: #9ca3af;
+    }
+
+    .parsed a {
+        color: #b89968;
+        border-bottom-color: #8b6950;
+    }
+
+    .parsed a:hover {
+        color: #d4b896;
+        border-bottom-color: #b89968;
+    }
+
+    .parsed blockquote {
+        color: #9ca3af;
+    }
+
+    .parsed code {
+        background-color: rgba(139, 105, 80, 0.2);
+        color: #b89968;
+    }
+
+    .parsed pre {
+        background-color: rgba(139, 105, 80, 0.1);
+        border-color: rgba(139, 105, 80, 0.3);
+    }
+
+    .parsed pre code {
+        color: #e5e7eb;
+    }
+
+    .parsed hr {
+        border-top-color: rgba(139, 105, 80, 0.3);
+    }
 }

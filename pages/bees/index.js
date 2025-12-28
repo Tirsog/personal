@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import styles from "../../styles/Bees.module.css"
 
 export default function BeekeeperCalendar() {
@@ -482,11 +483,28 @@ export default function BeekeeperCalendar() {
     return (
         <div className={styles.pageContainer}>
             <div className={styles.container}>
-                {/* Header */}
+                {/* Back Button */}
+                <Link href="/projects" className={styles.backButton}>
+                    ← Back to Projects
+                </Link>
+
+                {/* Project Header */}
+                <div className={styles.projectHeader}>
+                    <div className={styles.projectInfo}>
+                        <h2 className={styles.projectTitle}>
+                            UK Beekeeper's Calendar
+                        </h2>
+                        <p className={styles.projectDescription}>
+                            A comprehensive seasonal guide for beekeepers in the UK, tracking key tasks, colony state, and available forage throughout the year. Based on the British Beekeeping Association's yearly work guidelines.
+                        </p>
+                    </div>
+                    <div className={styles.projectIconLarge}>
+                        🐝
+                    </div>
+                </div>
+
+                {/* Original Header */}
                 <div className={styles.header}>
-                    <h1 className={styles.headerTitle}>
-                        🐝 UK Beekeeper´s Calendar
-                    </h1>
                     <p className={styles.headerSubtitle}>
                         Based on A YEAR´S WORK - Z REVISION TOPIC 1.14
                     </p>

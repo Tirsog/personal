@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.content {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem 0.75rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .title {
+        color: #f9fafb;
+    }
+
+    .description {
+        color: #9ca3af;
+    }
+}

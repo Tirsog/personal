@@ -5,8 +5,6 @@ date: "January 02 2023"
 image: "/images/posts/fights-worth-fighting.png"
 ---
 
-## What's this list?
-
 Raising children is hard, and it's often a battle. This is a list of recommendations on how to raise your kids, and to decide what battles are actually **worth fighting**.
 
 ### The Reading Fight

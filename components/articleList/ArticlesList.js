@@ -4,7 +4,7 @@ import styles from "./ArticlesList.module.css"
 export default function ArticlesList({ posts }) {
     return (
         <div className={styles.container}>
-            <h2 className={styles.heading}>Articles</h2>
+            <h2 className={styles.heading}>Latest thoughts</h2>
             <ul className={styles.list}>
                 {posts.map((post) => (
                     <li key={post.slug} className={styles.listItem}>
@@ -12,11 +12,11 @@ export default function ArticlesList({ posts }) {
                             href={`/articles/${post.slug}`}
                             className={styles.link}
                         >
-                            <span className={styles.title}>
-                                {post.frontmatter.title}
-                            </span>
                             <span className={styles.date}>
                                 {post.frontmatter.date}
+                            </span>
+                            <span className={styles.title}>
+                                {post.frontmatter.title}
                             </span>
                         </Link>
                     </li>

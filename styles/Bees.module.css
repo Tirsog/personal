@@ -9,6 +9,67 @@
     margin: 0 auto;
 }
 
+.backButton {
+    display: inline-flex;
+    align-items: center;
+    color: #8b6950;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+}
+
+.backButton:hover {
+    color: #6b4930;
+}
+
+.projectHeader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid #a0826d;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.projectTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.projectIconLarge {
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .projectHeader {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .projectIconLarge {
+        justify-self: center;
+    }
+}
+
 .header {
     text-align: center;
     margin-bottom: 2rem;

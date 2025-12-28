@@ -1,27 +1,17 @@
 ---
 title: Third Culture Kids
 description: "Raising children is hard, and it's often a battle. This is a list of recommendations on how to raise your kids, and to decide what battles are actually worth fighting."
-date: "September 22, 2023"
+date: "November 15, 2025"
 image: "/images/posts/fights-worth-fighting.png"
 ---
 
-### Implications of a Mid-Childhood Move to South America
-
----
-
-## Introduction
-
 Children who spend formative years abroad may develop characteristics of **Third Culture Kids (TCKs)**, shaped by living between their parents’ culture and the host country. The developmental window between **ages 4–12** is particularly influential, as children form social identities, cognitive flexibility, and peer attachments. A temporary move (3–4 years) to a culturally similar, Spanish-speaking country in South America provides both opportunities and challenges for child development, identity formation, and reintegration upon return.
-
----
 
 ## Defining Third Culture Kid (TCK)
 
 -   A **TCK** is a child who spends a significant part of their developmental years outside their parents’ passport culture(s).
 -   Identity is shaped more by **experience and transition** than by duration of stay alone.
 -   Even in culturally similar countries, children notice **differences in norms, education systems, and daily life** that can influence their worldview.
-
----
 
 ## Key Developmental Factors
 

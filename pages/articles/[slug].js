@@ -1,14 +1,12 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import Image from "next/image"
 import { marked } from "marked"
-import Link from "next/link"
 import Head from "next/head"
 import styles from "../../styles/Article.module.css"
 
 export default function PostPage({
-    frontmatter: { title, description, date, image },
+    frontmatter: { title, description, date },
     slug,
     content,
 }) {
@@ -21,22 +19,11 @@ export default function PostPage({
             </Head>
             <div className={styles.container}>
                 <h1 className={styles.title}>{title}</h1>
-
-                {image && (
-                    <div className={styles.imageContainer}>
-                        <Image
-                            src={image}
-                            width={300}
-                            height={300}
-                            alt={slug}
-                        ></Image>
-                    </div>
-                )}
+                <div className={styles.date}>{date}</div>
                 <div
                     className="parsed"
                     dangerouslySetInnerHTML={{ __html: marked(content) }}
                 ></div>
-                <div className={styles.date}>Posted on {date}</div>
             </div>
         </>
     )

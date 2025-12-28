@@ -63,7 +63,6 @@ export default function ContactForm() {
 
     return (
         <div className={styles.container}>
-            <h2>Contact Me</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.inputGroup}>
                     <input

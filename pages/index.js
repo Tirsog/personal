@@ -12,7 +12,7 @@ export default function Home({ posts }) {
     return (
         <>
             <Head>
-                <title>Tirso G.</title>
+                <title>Tirso</title>
                 <meta name="description" content="Tirso's Personal page" />
                 <meta
                     name="keywords"
@@ -23,19 +23,44 @@ export default function Home({ posts }) {
             <div className={styles.container}>
                 <div className={styles.section}>
                     <div className={styles.sectionInner}>
-                        <h1 className={styles.title}>Tirso's Stuff</h1>
-                        <p className={styles.description}>
-                            <Link className={styles.link} href="/bees">
-                                Go to Bees
-                            </Link>
-                        </p>
-                        <div className={styles.container}>
+                        <div className={styles.intro}>
+                            <p className={styles.bio}>
+                                I'm Tirso, a product-focused builder working at
+                                the intersection of technology, marketing, and
+                                business. I run and grow{" "}
+                                <a
+                                    href="https://igerent.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.link}
+                                >
+                                    iGerent
+                                </a>
+                                , where I work on product design, automation,
+                                and growth to make international trademark
+                                protection clearer and more efficient.
+                            </p>
+
+                            <p className={styles.description}>
+                                This site is my personal space to think out
+                                loud, share ideas, and document projects that
+                                sit beyond the day-to-day work at{" "}
+                                <a
+                                    href="https://igerent.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.link}
+                                >
+                                    iGerent
+                                </a>
+                                .
+                            </p>
+                        </div>
+
+                        <div>
                             <ArticlesList posts={posts} />
                         </div>
                     </div>
-                </div>
-                <div className={styles.section}>
-                    <ContactForm />
                 </div>
             </div>
         </>

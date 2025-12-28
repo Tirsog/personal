@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projectCard {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #a0826d;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.projectCard:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #8b6950;
+    transform: translateY(-2px);
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.projectIcon {
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .projectCard {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .projectIcon {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9375rem;
+    }
+
+    .projectCard {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .projectTitle {
+        font-size: 1.25rem;
+    }
+
+    .projectDescription {
+        font-size: 0.9375rem;
+    }
+
+    .projectIcon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .title {
+        color: #f9fafb;
+    }
+
+    .description {
+        color: #9ca3af;
+    }
+
+    .projectCard {
+        background: rgba(31, 41, 55, 0.4);
+        border-color: #8b6950;
+    }
+
+    .projectCard:hover {
+        background: rgba(31, 41, 55, 0.6);
+        border-color: #b89968;
+    }
+
+    .projectTitle {
+        color: #f9fafb;
+    }
+
+    .projectDescription {
+        color: #9ca3af;
+    }
+}
