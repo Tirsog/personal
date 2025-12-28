@@ -7,6 +7,8 @@ export default function ContactForm() {
     const [message, setMessage] = useState("")
     const [emailError, setEmailError] = useState("")
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitStatus, setSubmitStatus] = useState("") // 'success' or 'error'
+    const [submitMessage, setSubmitMessage] = useState("")
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -33,32 +35,50 @@ export default function ContactForm() {
         }
 
         setIsSubmitting(true)
+        setSubmitStatus("")
+        setSubmitMessage("")
 
-        const res = await fetch("/api/sendgrid", {
-            body: JSON.stringify({
-                email: email,
-                fullname: fullname,
-                subject: "Contact Form Message",
-                message: message,
-            }),
-            headers: {
-                "Content-Type": "application/json",
-            },
-            method: "POST",
-        })
+        try {
+            const res = await fetch("/api/resend", {
+                body: JSON.stringify({
+                    email: email,
+                    fullname: fullname,
+                    subject: "Contact Form Message",
+                    message: message,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+            })
 
-        const { error } = await res.json()
-        if (error) {
-            console.log(error)
+            const data = await res.json()
+
+            if (!res.ok || data.error) {
+                setSubmitStatus("error")
+                setSubmitMessage(data.error || "Failed to send message. Please check your SendGrid configuration.")
+                setIsSubmitting(false)
+                return
+            }
+
+            setSubmitStatus("success")
+            setSubmitMessage("Message sent successfully!")
+            setFullname("")
+            setEmail("")
+            setMessage("")
             setIsSubmitting(false)
-            return
-        }
 
-        console.log(fullname, email, message)
-        setIsSubmitting(false)
-        setFullname("")
-        setEmail("")
-        setMessage("")
+            // Clear success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus("")
+                setSubmitMessage("")
+            }, 5000)
+        } catch (error) {
+            console.error("Contact form error:", error)
+            setSubmitStatus("error")
+            setSubmitMessage("Failed to send message. Please try again later.")
+            setIsSubmitting(false)
+        }
     }
 
     return (
@@ -120,6 +140,18 @@ export default function ContactForm() {
                         {isSubmitting ? "Sending..." : "Send Message"}
                     </button>
                 </div>
+
+                {submitMessage && (
+                    <div
+                        className={`${styles.submitMessage} ${
+                            submitStatus === "success"
+                                ? styles.submitSuccess
+                                : styles.submitError
+                        }`}
+                    >
+                        {submitMessage}
+                    </div>
+                )}
             </form>
         </div>
     )

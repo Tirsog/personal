@@ -42,7 +42,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className={styles.copyright}>
-                    Tirso García - {currentYear}
+                    Tirso Garcia - {currentYear}
                 </div>
             </div>
         </footer>
