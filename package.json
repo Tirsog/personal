@@ -14,11 +14,13 @@
     "eslint": "8.29.0",
     "eslint-config-next": "^15.5.4",
     "gray-matter": "^4.0.3",
+    "leaflet": "^1.9.4",
     "marked": "^4.2.5",
     "next": "^15.5.7",
     "next-sitemap": "^4.0.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0",
     "resend": "^6.6.0"
   },
   "devDependencies": {

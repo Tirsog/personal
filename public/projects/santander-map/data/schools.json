@@ -1,0 +1,1255 @@
+[
+  {
+    "id": 2375833737,
+    "lat": 43.4630417,
+    "lon": -3.7999006,
+    "name": "Escuela Técnico Profesional Hernán Cortés",
+    "type": "fp"
+  },
+  {
+    "id": 2380317611,
+    "lat": 43.4637223,
+    "lon": -3.793642,
+    "name": "Colegio Concertado San Antonio",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 2395136615,
+    "lat": 43.4708149,
+    "lon": -3.7914888,
+    "name": "Colegio Concertado San Roque - Los Pinares",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 2396101256,
+    "lat": 43.4573176,
+    "lon": -3.8121854,
+    "name": "Centro de Educación Especial Juan XXIII",
+    "type": "special"
+  },
+  {
+    "id": 2534823363,
+    "lat": 43.4421935,
+    "lon": -3.8635223,
+    "name": "Escuela Infantil Ciempiés",
+    "type": "infantil"
+  },
+  {
+    "id": 2592646550,
+    "lat": 43.4727378,
+    "lon": -3.7836287,
+    "name": "Black Ball Surf Shop @ School",
+    "type": "other"
+  },
+  {
+    "id": 2592652314,
+    "lat": 43.4634616,
+    "lon": -3.7992096,
+    "name": "Kells College",
+    "type": "other"
+  },
+  {
+    "id": 3090823001,
+    "lat": 43.4586808,
+    "lon": -3.8239395,
+    "name": "Ceinmark",
+    "type": "other"
+  },
+  {
+    "id": 4045569186,
+    "lat": 43.384744,
+    "lon": -3.7337479,
+    "name": "Colegio Concertado Ave María",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 4915099926,
+    "lat": 43.4477146,
+    "lon": -3.848953,
+    "name": "Escuela de Rugby del Universitario R.C.",
+    "type": "other"
+  },
+  {
+    "id": 6828435197,
+    "lat": 43.4614253,
+    "lon": -3.8218628,
+    "name": "Decroly Perines",
+    "type": "other"
+  },
+  {
+    "id": 7368543356,
+    "lat": 43.4662729,
+    "lon": -3.8121933,
+    "name": "Escuela de Diseño Vinsac",
+    "type": "other"
+  },
+  {
+    "id": 9781134637,
+    "lat": 43.3253505,
+    "lon": -3.8497985,
+    "name": "Escuela Infantil Las Estrellas",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134638,
+    "lat": 43.4607583,
+    "lon": -3.8512592,
+    "name": "Federación Cántabra de Salvamento y Socorrismo",
+    "type": "other"
+  },
+  {
+    "id": 9781134639,
+    "lat": 43.4248632,
+    "lon": -3.8324346,
+    "name": "Fundación Laboral de la Construcción",
+    "type": "other"
+  },
+  {
+    "id": 9781134640,
+    "lat": 43.4346051,
+    "lon": -3.9170014,
+    "name": "Escuela Técnico Profesional en Ciencias de la Salud Hospital Mompía",
+    "type": "fp"
+  },
+  {
+    "id": 9781134641,
+    "lat": 43.357183,
+    "lon": -3.953279,
+    "name": "Centro de Educación de Personas Adultas de Piélagos",
+    "type": "adult"
+  },
+  {
+    "id": 9781134643,
+    "lat": 43.4702768,
+    "lon": -3.8091392,
+    "name": "Escuela Infantil de la Universidad de Cantabria",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134647,
+    "lat": 43.4568305,
+    "lon": -3.828746,
+    "name": "Centro de Atención Educativa Hospitalaria y Domiciliaria",
+    "type": "other"
+  },
+  {
+    "id": 9781134654,
+    "lat": 43.4850356,
+    "lon": -3.7977317,
+    "name": "Centro de Educación Especial El Molino",
+    "type": "special"
+  },
+  {
+    "id": 9781134655,
+    "lat": 43.3957431,
+    "lon": -3.8237833,
+    "name": "Centro de Educación de Personas Adultas de Astillero",
+    "type": "adult"
+  },
+  {
+    "id": 9781134658,
+    "lat": 43.4647786,
+    "lon": -3.7957678,
+    "name": "Centro de Educación Especial Stephane Lupasco",
+    "type": "special"
+  },
+  {
+    "id": 9781134662,
+    "lat": 43.4651357,
+    "lon": -3.8106534,
+    "name": "Cenafe Escuelas Cantabria",
+    "type": "other"
+  },
+  {
+    "id": 9781134666,
+    "lat": 43.4350639,
+    "lon": -4.0168595,
+    "name": "Escuela Infantil La Arena",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134667,
+    "lat": 43.4248115,
+    "lon": -4.0420575,
+    "name": "Escuela Infantil Caballito de Mar",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134675,
+    "lat": 43.4681148,
+    "lon": -3.8777438,
+    "name": "Maestría Dental",
+    "type": "other"
+  },
+  {
+    "id": 9781134676,
+    "lat": 43.4650985,
+    "lon": -3.8109716,
+    "name": "Centro FP de Ciencias Radiológicas",
+    "type": "fp"
+  },
+  {
+    "id": 9781134677,
+    "lat": 43.4400292,
+    "lon": -3.8484746,
+    "name": "Centro de Educación Infantil Junior",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134679,
+    "lat": 43.4546504,
+    "lon": -3.5802007,
+    "name": "Escuela Infantil Trastolillo",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134682,
+    "lat": 43.4581236,
+    "lon": -3.8216229,
+    "name": "Equipo Formación y Empleo",
+    "type": "other"
+  },
+  {
+    "id": 9781134685,
+    "lat": 43.4236489,
+    "lon": -3.8548652,
+    "name": "Centro de Educación de Personas Adultas de Camargo",
+    "type": "adult"
+  },
+  {
+    "id": 9781134689,
+    "lat": 43.4636456,
+    "lon": -3.8058194,
+    "name": "Centro Nacional de Estudios de Técnicos Deportivos",
+    "type": "other"
+  },
+  {
+    "id": 9781134690,
+    "lat": 43.4642663,
+    "lon": -3.8662083,
+    "name": "Brenes Escuela Deportiva de Regimen Especial Cantabria",
+    "type": "other"
+  },
+  {
+    "id": 9781134695,
+    "lat": 43.3553069,
+    "lon": -3.952375,
+    "name": "Escuela Infantil La Jilguera",
+    "type": "infantil"
+  },
+  {
+    "id": 9781134701,
+    "lat": 43.4546948,
+    "lon": -3.8158224,
+    "name": "Nexian Training",
+    "type": "other"
+  },
+  {
+    "id": 22931187,
+    "lat": 43.4626554,
+    "lon": -3.824169,
+    "name": "La Salle Santander",
+    "type": "other"
+  },
+  {
+    "id": 24284073,
+    "lat": 43.4395256,
+    "lon": -3.8454813,
+    "name": "Centro de Educación Infantil y Primaria Nueva Montaña",
+    "type": "infantil"
+  },
+  {
+    "id": 25874992,
+    "lat": 43.4573424,
+    "lon": -3.8201469,
+    "name": "Centro de Educación Infantil Los Viveros",
+    "type": "infantil"
+  },
+  {
+    "id": 28442364,
+    "lat": 43.4651971,
+    "lon": -3.8110213,
+    "name": "Colegio Concertado Compañía de María",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 31721426,
+    "lat": 43.3927954,
+    "lon": -3.8073111,
+    "name": "Escuela de San Salvador",
+    "type": "other"
+  },
+  {
+    "id": 33640189,
+    "lat": 43.4642705,
+    "lon": -3.8660842,
+    "name": "Colegio Concertado Verdemar",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 40848400,
+    "lat": 43.4133017,
+    "lon": -3.8555043,
+    "name": "Instituto de Educación Secundaria Ría del Carmen",
+    "type": "secondary"
+  },
+  {
+    "id": 90012857,
+    "lat": 43.3346333,
+    "lon": -3.8185643,
+    "name": "Centro de Educación Infantil y Primaria Ambrosio Díez Gómez",
+    "type": "infantil"
+  },
+  {
+    "id": 109769995,
+    "lat": 43.469241,
+    "lon": -3.805362,
+    "name": "Colegio Concertado Atalaya",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 146183824,
+    "lat": 43.4503917,
+    "lon": -3.7321085,
+    "name": "Escuela Infantil Municipal Claudio del Río",
+    "type": "infantil"
+  },
+  {
+    "id": 178494589,
+    "lat": 43.4608307,
+    "lon": -3.8466644,
+    "name": "Centro de Educación Infantil y Primaria María Sanz de Sautuola",
+    "type": "infantil"
+  },
+  {
+    "id": 178494591,
+    "lat": 43.4616777,
+    "lon": -3.8486025,
+    "name": "Instituto de Educación Secundaria La Albericia",
+    "type": "secondary"
+  },
+  {
+    "id": 178605786,
+    "lat": 43.4583865,
+    "lon": -3.8396467,
+    "name": "Centro de Educación Infantil y Primaria Jesús Cancio",
+    "type": "infantil"
+  },
+  {
+    "id": 178605787,
+    "lat": 43.4474201,
+    "lon": -3.8529322,
+    "name": "Instituto de Educación Secundaria Peñacastillo",
+    "type": "secondary"
+  },
+  {
+    "id": 178762441,
+    "lat": 43.4642603,
+    "lon": -3.7944477,
+    "name": "Colegio Concertado Calasanz",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 178762581,
+    "lat": 43.4639965,
+    "lon": -3.7911493,
+    "name": "Colegio Concertado Ángeles Custodios",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 203097508,
+    "lat": 43.4779031,
+    "lon": -3.792832,
+    "name": "Colegio Concertado San Agustín",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 213567070,
+    "lat": 43.3253765,
+    "lon": -3.8534473,
+    "name": "Centro de Educación Infantil",
+    "type": "infantil"
+  },
+  {
+    "id": 217289601,
+    "lat": 43.3101321,
+    "lon": -3.8514924,
+    "name": "Instituto de Educación Secundaria Lope de Vega",
+    "type": "secondary"
+  },
+  {
+    "id": 222815551,
+    "lat": 43.3788736,
+    "lon": -3.7375795,
+    "name": "Centro de Educación Infantil y Primaria Marqués de Valdecilla",
+    "type": "infantil"
+  },
+  {
+    "id": 222815552,
+    "lat": 43.3782556,
+    "lon": -3.7384139,
+    "name": "Instituto de Educación Secundaria Ricardo Bernardo",
+    "type": "secondary"
+  },
+  {
+    "id": 224861589,
+    "lat": 43.4235527,
+    "lon": -3.8552083,
+    "name": "Instituto de Educación Secundaria Muriedas",
+    "type": "secondary"
+  },
+  {
+    "id": 231106113,
+    "lat": 43.4645506,
+    "lon": -3.7922236,
+    "name": "Colegio Concertado San Martín",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231124804,
+    "lat": 43.4562352,
+    "lon": -3.8391642,
+    "name": "Colegio Concertado Santa María Micaela",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231194649,
+    "lat": 43.4639878,
+    "lon": -3.7860936,
+    "name": "Colegio Concertado Tagore",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231196024,
+    "lat": 43.363625,
+    "lon": -3.7518575,
+    "name": "Colegio Concertado Torreanaz",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231197212,
+    "lat": 43.4312641,
+    "lon": -3.9680541,
+    "name": "Colegio Concertado Torrevelo-Peñalabra",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231199280,
+    "lat": 43.4854143,
+    "lon": -3.7990887,
+    "name": "Colegio Concertado Centro Social Bellavista - Julio Blanco",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 231199741,
+    "lat": 43.4564163,
+    "lon": -3.8519869,
+    "name": "Centro de Educación Especial Arboleda",
+    "type": "special"
+  },
+  {
+    "id": 231202242,
+    "lat": 43.4849608,
+    "lon": -3.7977237,
+    "name": "Centro de Educación Infantil y Primaria Vital Alsar",
+    "type": "infantil"
+  },
+  {
+    "id": 242371792,
+    "lat": 43.4384116,
+    "lon": -3.8664091,
+    "name": "Fundación Laboral del Metal",
+    "type": "other"
+  },
+  {
+    "id": 248082364,
+    "lat": 43.4567497,
+    "lon": -3.8373381,
+    "name": "Instituto de Educación Secundaria Leonardo Torres Quevedo",
+    "type": "secondary"
+  },
+  {
+    "id": 257999731,
+    "lat": 43.3559805,
+    "lon": -3.8327526,
+    "name": "Aula de Educación Medioambiental",
+    "type": "other"
+  },
+  {
+    "id": 258642195,
+    "lat": 43.4683401,
+    "lon": -3.7794408,
+    "name": "Colegio Concertado Sagrado Corazón Esclavas",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 271818029,
+    "lat": 43.4633581,
+    "lon": -3.8285293,
+    "name": "Centro de Educación Infantil y Primaria Manuel Llano",
+    "type": "infantil"
+  },
+  {
+    "id": 272650591,
+    "lat": 43.4567349,
+    "lon": -3.5723161,
+    "name": "Instituto de Educación Secundaria San Miguel de Meruelo",
+    "type": "secondary"
+  },
+  {
+    "id": 273123655,
+    "lat": 43.4764057,
+    "lon": -3.6121985,
+    "name": "Centro de Educación Infantil y Primaria Benedicto Ruiz",
+    "type": "infantil"
+  },
+  {
+    "id": 291238843,
+    "lat": 43.4550314,
+    "lon": -3.8131306,
+    "name": "Centro de Educación Infantil y Primaria José Arce Bodega",
+    "type": "infantil"
+  },
+  {
+    "id": 297115856,
+    "lat": 43.4212701,
+    "lon": -4.0381548,
+    "name": "Centro de Educación Infantil y Primaria Portus Blendium",
+    "type": "infantil"
+  },
+  {
+    "id": 299245223,
+    "lat": 43.4630129,
+    "lon": -3.9337668,
+    "name": "Centro de Educación Infantil y Primaria Las Dunas",
+    "type": "infantil"
+  },
+  {
+    "id": 299278072,
+    "lat": 43.4446246,
+    "lon": -3.9012256,
+    "name": "Instituto de Educación Secundaria La Marina",
+    "type": "secondary"
+  },
+  {
+    "id": 299281086,
+    "lat": 43.3866894,
+    "lon": -4.015359,
+    "name": "Colegio Concertado La Milagrosa",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 299931143,
+    "lat": 43.3869547,
+    "lon": -4.028659,
+    "name": "Centro de Educación Infantil y Primaria Pérez Galdos",
+    "type": "infantil"
+  },
+  {
+    "id": 299942449,
+    "lat": 43.469565,
+    "lon": -3.8995042,
+    "name": "Colegio Concertado Liceo San Juan de La Canal",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 300049115,
+    "lat": 43.4636018,
+    "lon": -3.8952305,
+    "name": "Centro de Educación Infantil y Primaria Costa Quebrada",
+    "type": "infantil"
+  },
+  {
+    "id": 300057038,
+    "lat": 43.4352492,
+    "lon": -4.0161994,
+    "name": "Centro de Educación Infantil y Primaria Marzán",
+    "type": "infantil"
+  },
+  {
+    "id": 301409158,
+    "lat": 43.4229674,
+    "lon": -3.754769,
+    "name": "Centro de Educación Infantil y Primaria Marina de Cudeyo",
+    "type": "infantil"
+  },
+  {
+    "id": 301413899,
+    "lat": 43.3446352,
+    "lon": -3.7464732,
+    "name": "Centro de Educación Infantil y Primaria Eugenio Perojo",
+    "type": "infantil"
+  },
+  {
+    "id": 301456233,
+    "lat": 43.4737665,
+    "lon": -3.7932634,
+    "name": "Instituto de Educación Secundaria Las Llamas",
+    "type": "secondary"
+  },
+  {
+    "id": 301456652,
+    "lat": 43.4713704,
+    "lon": -3.7911738,
+    "name": "Centro de Educación Infantil y Primaria Sardinero",
+    "type": "infantil"
+  },
+  {
+    "id": 313316229,
+    "lat": 43.4011937,
+    "lon": -3.8179386,
+    "name": "Centro de Educación Infantil y Primaria Fernando de los Ríos",
+    "type": "infantil"
+  },
+  {
+    "id": 333302638,
+    "lat": 43.4620537,
+    "lon": -3.8270073,
+    "name": "Centro de Educación Infantil y Primaria Quinta Porrúa",
+    "type": "infantil"
+  },
+  {
+    "id": 333302645,
+    "lat": 43.463899,
+    "lon": -3.8232339,
+    "name": "Instituto de Educación Secundaria José María Pereda",
+    "type": "secondary"
+  },
+  {
+    "id": 360416497,
+    "lat": 43.4149224,
+    "lon": -3.9431133,
+    "name": "Centro de Educación Infantil y Primaria Bajo Pas",
+    "type": "infantil"
+  },
+  {
+    "id": 361441533,
+    "lat": 43.4796769,
+    "lon": -3.8019875,
+    "name": "Centro de Educación Infantil y Primaria Cabo Mayor",
+    "type": "infantil"
+  },
+  {
+    "id": 363560775,
+    "lat": 43.4562184,
+    "lon": -3.8467431,
+    "name": "Centro de Educación Infantil y Primaria Gerardo Diego",
+    "type": "infantil"
+  },
+  {
+    "id": 364913389,
+    "lat": 43.4584734,
+    "lon": -3.7270884,
+    "name": "Centro de Educación Infantil y Primaria Nuestra Señora de Latas",
+    "type": "infantil"
+  },
+  {
+    "id": 365268306,
+    "lat": 43.3483037,
+    "lon": -3.7017175,
+    "name": "Centro de Educación Infantil y Primaria Leopoldo y Josefa del Valle",
+    "type": "infantil"
+  },
+  {
+    "id": 395549393,
+    "lat": 43.4696377,
+    "lon": -3.7898616,
+    "name": "Instituto de Educación Secundaria Villajunco",
+    "type": "secondary"
+  },
+  {
+    "id": 395559658,
+    "lat": 43.358678,
+    "lon": -3.9543915,
+    "name": "Instituto de Educación Secundaria Valle de Piélagos",
+    "type": "secondary"
+  },
+  {
+    "id": 401631873,
+    "lat": 43.4713256,
+    "lon": -3.8313908,
+    "name": "Centro de Educación Infantil y Primaria Eloy Villanueva",
+    "type": "infantil"
+  },
+  {
+    "id": 402612149,
+    "lat": 43.4532199,
+    "lon": -3.8298888,
+    "name": "Escuela Infantil Diminutos Candina",
+    "type": "infantil"
+  },
+  {
+    "id": 418666618,
+    "lat": 43.472386,
+    "lon": -3.823545,
+    "name": "Colegio Concertado Jardín de África",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 433258913,
+    "lat": 43.3956739,
+    "lon": -3.8239592,
+    "name": "Instituto de Educación Secundaria El Astillero",
+    "type": "secondary"
+  },
+  {
+    "id": 434318558,
+    "lat": 43.3965293,
+    "lon": -3.8238496,
+    "name": "Centro de Educación Infantil y Primaria José Ramón Sánchez",
+    "type": "infantil"
+  },
+  {
+    "id": 436020677,
+    "lat": 43.4622424,
+    "lon": -3.8173981,
+    "name": "Centro de Educación Infantil y Primaria Cisneros",
+    "type": "infantil"
+  },
+  {
+    "id": 442488041,
+    "lat": 43.4164608,
+    "lon": -4.0409879,
+    "name": "Instituto de Educación Secundaria Ría San Martín",
+    "type": "secondary"
+  },
+  {
+    "id": 448975173,
+    "lat": 43.4557856,
+    "lon": -3.8353856,
+    "name": "Centro de Educación Infantil y Primaria Fuente de La Salud",
+    "type": "infantil"
+  },
+  {
+    "id": 448975175,
+    "lat": 43.4561468,
+    "lon": -3.8439679,
+    "name": "Colegio Concertado Niño Jesús",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 465666154,
+    "lat": 43.4571265,
+    "lon": -3.8247306,
+    "name": "Colegio Concertado de Educación Espacial El Molino",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 525121716,
+    "lat": 43.4237791,
+    "lon": -3.9487401,
+    "name": "Centro de Educación Infantil Garruchines",
+    "type": "infantil"
+  },
+  {
+    "id": 539596323,
+    "lat": 43.4644806,
+    "lon": -3.8098051,
+    "name": "Colegio Concertado San José",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 550233925,
+    "lat": 43.4637411,
+    "lon": -3.8004783,
+    "name": "Centro de Educación Infantil y Primaria Menéndez Pelayo",
+    "type": "infantil"
+  },
+  {
+    "id": 552141777,
+    "lat": 43.4231899,
+    "lon": -3.8383849,
+    "name": "Centro Municipal de Formación",
+    "type": "other"
+  },
+  {
+    "id": 552459648,
+    "lat": 43.414854,
+    "lon": -3.8487996,
+    "name": "Centro de Educación Infantil y Primaria Matilde de La Torre",
+    "type": "infantil"
+  },
+  {
+    "id": 552462906,
+    "lat": 43.4136365,
+    "lon": -3.8564916,
+    "name": "Instituto de Educación Secundaria Valle de Camargo",
+    "type": "secondary"
+  },
+  {
+    "id": 576442765,
+    "lat": 43.4029103,
+    "lon": -3.76729,
+    "name": "Instituto de Educación Secundaria La Granja",
+    "type": "secondary"
+  },
+  {
+    "id": 576851750,
+    "lat": 43.44125,
+    "lon": -3.9039535,
+    "name": "Centro de Educación Infantil y Primaria Buenaventura González",
+    "type": "infantil"
+  },
+  {
+    "id": 578143984,
+    "lat": 43.4668966,
+    "lon": -3.8535674,
+    "name": "Centro de Educación Infantil y Primaria Manuel Cacicedo",
+    "type": "infantil"
+  },
+  {
+    "id": 578164498,
+    "lat": 43.470196,
+    "lon": -3.8093066,
+    "name": "Centro de Educación Infantil y Primaria Dionisio García Barredo",
+    "type": "infantil"
+  },
+  {
+    "id": 580247575,
+    "lat": 43.4665969,
+    "lon": -3.7931048,
+    "name": "Colegio Concertado Castroverde",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 651512515,
+    "lat": 43.4585446,
+    "lon": -3.8230711,
+    "name": "Centro de Educación Infantil y Primaria Ramón Pelayo",
+    "type": "infantil"
+  },
+  {
+    "id": 655326160,
+    "lat": 43.3760215,
+    "lon": -3.6815497,
+    "name": "Centro de Educación Infantil y Primaria Aguanaz",
+    "type": "infantil"
+  },
+  {
+    "id": 661377887,
+    "lat": 43.3952898,
+    "lon": -3.5905596,
+    "name": "Centro de Educación Infantil y Primaria Jesús del Monte",
+    "type": "infantil"
+  },
+  {
+    "id": 699371192,
+    "lat": 43.4266669,
+    "lon": -3.9712736,
+    "name": "Centro de Educación Infantil y Primaria Elsedo",
+    "type": "infantil"
+  },
+  {
+    "id": 722274709,
+    "lat": 43.4465802,
+    "lon": -3.8484648,
+    "name": "Centro de Educación Infantil y Primaria Elena Quiroga",
+    "type": "infantil"
+  },
+  {
+    "id": 731870822,
+    "lat": 43.3225386,
+    "lon": -3.9589516,
+    "name": "Centro de Educación Infantil y Primaria Cuevas del Castillo",
+    "type": "infantil"
+  },
+  {
+    "id": 732067254,
+    "lat": 43.4645602,
+    "lon": -3.7914664,
+    "name": "Centro de Formación Profesional López Vicuña",
+    "type": "fp"
+  },
+  {
+    "id": 744276685,
+    "lat": 43.4628594,
+    "lon": -3.8185426,
+    "name": "Colegio Concertado Cumbres",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 744418216,
+    "lat": 43.4627728,
+    "lon": -3.8175767,
+    "name": "Escuela Oficial de Idiomas de Santander",
+    "type": "other"
+  },
+  {
+    "id": 759445367,
+    "lat": 43.3043908,
+    "lon": -3.8923362,
+    "name": "Unnamed School",
+    "type": "other"
+  },
+  {
+    "id": 781299704,
+    "lat": 43.4668829,
+    "lon": -3.8091874,
+    "name": "Colegio Concertado María Auxiliadora",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 784200987,
+    "lat": 43.4668248,
+    "lon": -3.7988408,
+    "name": "Colegio Concertado Haypo",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 789295427,
+    "lat": 43.4674612,
+    "lon": -3.788113,
+    "name": "Colegio Concertado María Reina Inmaculada",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 791285780,
+    "lat": 43.4633591,
+    "lon": -3.8082277,
+    "name": "Instituto de Educación Secundaria Santa Clara",
+    "type": "secondary"
+  },
+  {
+    "id": 791834724,
+    "lat": 43.464439,
+    "lon": -3.8086303,
+    "name": "Colegio Concertado La Anunciación",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 802137138,
+    "lat": 43.4636081,
+    "lon": -3.8049421,
+    "name": "Colegio Concertado Kostka",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 813367073,
+    "lat": 43.4656396,
+    "lon": -3.8039064,
+    "name": "Centro de Educación de Personas Adultas de Santander",
+    "type": "adult"
+  },
+  {
+    "id": 814515476,
+    "lat": 43.4583292,
+    "lon": -3.8558064,
+    "name": "Instituto de Educación Secundaria Alisal",
+    "type": "secondary"
+  },
+  {
+    "id": 823789248,
+    "lat": 43.4010566,
+    "lon": -3.6670307,
+    "name": "Centro de Educación Infantil y Primaria Trasmiera",
+    "type": "infantil"
+  },
+  {
+    "id": 844719717,
+    "lat": 43.4693156,
+    "lon": -3.8027228,
+    "name": "Centro de Educación Infantil y Primaria María Blanchard",
+    "type": "infantil"
+  },
+  {
+    "id": 855901355,
+    "lat": 43.452315,
+    "lon": -3.8168104,
+    "name": "Centro de Formación y Empleo",
+    "type": "other"
+  },
+  {
+    "id": 856268519,
+    "lat": 43.4519678,
+    "lon": -3.8165917,
+    "name": "Centro de Educación Infantil Marqués de Valterra",
+    "type": "infantil"
+  },
+  {
+    "id": 856268520,
+    "lat": 43.4520579,
+    "lon": -3.8169282,
+    "name": "Colegio Concertado Miguel Bravo",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 866825630,
+    "lat": 43.3934619,
+    "lon": -3.8546731,
+    "name": "Centro de Educación Infantil y Primaria Ramón y Cajal",
+    "type": "infantil"
+  },
+  {
+    "id": 868300337,
+    "lat": 43.4575665,
+    "lon": -3.8105475,
+    "name": "Centro Concertado Puente I",
+    "type": "other"
+  },
+  {
+    "id": 892958229,
+    "lat": 43.4826449,
+    "lon": -3.7930792,
+    "name": "Centro de Educación Especial Padre Apolinar",
+    "type": "special"
+  },
+  {
+    "id": 915149773,
+    "lat": 43.4471977,
+    "lon": -3.8507562,
+    "name": "Centro Integrado de Formación Profesional Nº 1",
+    "type": "fp"
+  },
+  {
+    "id": 915149774,
+    "lat": 43.4481509,
+    "lon": -3.8505173,
+    "name": "Instituto de Educación Secundaria Augusto González de Linares",
+    "type": "secondary"
+  },
+  {
+    "id": 941786994,
+    "lat": 43.4054442,
+    "lon": -3.8596956,
+    "name": "Centro de Educación Infantil y Primaria Agapito Cagigas",
+    "type": "infantil"
+  },
+  {
+    "id": 964234425,
+    "lat": 43.4149338,
+    "lon": -3.8218344,
+    "name": "Centro de Educación Especial Parayas",
+    "type": "special"
+  },
+  {
+    "id": 968102823,
+    "lat": 43.4803641,
+    "lon": -3.8049881,
+    "name": "Centro Social Bellavista de Formación Profesional",
+    "type": "fp"
+  },
+  {
+    "id": 997099846,
+    "lat": 43.3683016,
+    "lon": -3.8623692,
+    "name": "Escuela Waldorf Cantabria",
+    "type": "other"
+  },
+  {
+    "id": 1031105231,
+    "lat": 43.4631209,
+    "lon": -3.8368271,
+    "name": "Instituto de Educación Secundaria Cantabria",
+    "type": "secondary"
+  },
+  {
+    "id": 1065071800,
+    "lat": 43.3713695,
+    "lon": -3.8576775,
+    "name": "Centro de Educación Infantil y Primaria Marcial Solana",
+    "type": "infantil"
+  },
+  {
+    "id": 1065071888,
+    "lat": 43.3758682,
+    "lon": -3.7188089,
+    "name": "Colegio Concertado Apostolado del Sagrado Corazón",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065071910,
+    "lat": 43.406152,
+    "lon": -3.8571948,
+    "name": "Colegio Concertado Altamira",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065071936,
+    "lat": 43.4021217,
+    "lon": -3.8366995,
+    "name": "Instituto de Educación Secundaria Nuestra Señora de los Remedios",
+    "type": "secondary"
+  },
+  {
+    "id": 1065071937,
+    "lat": 43.4638617,
+    "lon": -3.8392006,
+    "name": "Asociacion Cántabra de Lucha contra el Paro",
+    "type": "other"
+  },
+  {
+    "id": 1065072025,
+    "lat": 43.3492323,
+    "lon": -3.9856567,
+    "name": "Centro de Educación Infantil y Primaria Estela de Zurita",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072029,
+    "lat": 43.403679,
+    "lon": -3.9057277,
+    "name": "Centro de Educación Infantil y Primaria Arenas",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072030,
+    "lat": 43.4621528,
+    "lon": -3.8177432,
+    "name": "Centro de Educación Infantil y Primaria Antonio Mendoza",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072077,
+    "lat": 43.4517043,
+    "lon": -3.8739608,
+    "name": "Guardería Chiqui Tin PCTCAN",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072084,
+    "lat": 43.4791642,
+    "lon": -3.6133058,
+    "name": "Escuela Infantil Cabo de Ajo",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072112,
+    "lat": 43.4289716,
+    "lon": -3.852668,
+    "name": "Centro de Educación Infantil y Primaria Gloria Fuertes",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072185,
+    "lat": 43.415859,
+    "lon": -3.837567,
+    "name": "Centro de Educación Infantil y Primaria Juan de Herrera",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072223,
+    "lat": 43.4535884,
+    "lon": -3.8248859,
+    "name": "Instituto de Educación Secundaria Alberto Pico",
+    "type": "secondary"
+  },
+  {
+    "id": 1065072230,
+    "lat": 43.3995174,
+    "lon": -3.826829,
+    "name": "Colegio Concertado San José Astillero",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065072248,
+    "lat": 43.4594069,
+    "lon": -3.8145426,
+    "name": "Colegio Concertado Purísima Concepción",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065072262,
+    "lat": 43.3612978,
+    "lon": -3.95782,
+    "name": "Centro de Educación Infantil y Primaria El Mimbral",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072268,
+    "lat": 43.4313588,
+    "lon": -3.92197,
+    "name": "Centro de Educación Infantil y Primaria María Torner",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072301,
+    "lat": 43.3971971,
+    "lon": -3.7658382,
+    "name": "Colegio Rural Agrupado Peña Cabarga",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065072353,
+    "lat": 43.4354702,
+    "lon": -3.8622132,
+    "name": "Colegio Concertado Sagrada Familia",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065072392,
+    "lat": 43.4335628,
+    "lon": -3.872324,
+    "name": "Centro de Educación Infantil y Primaria Mateo Escagedo Salmón",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072462,
+    "lat": 43.4469745,
+    "lon": -3.8612122,
+    "name": "Centro de Educación Infantil y Primaria Marqués de Estella",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072471,
+    "lat": 43.3575111,
+    "lon": -3.9682747,
+    "name": "Colegio Concertado Antonio Robinet",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1065072495,
+    "lat": 43.3550261,
+    "lon": -3.9530705,
+    "name": "Centro de Educación Infantil y Primaria Virgen de Valencia",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072548,
+    "lat": 43.4575842,
+    "lon": -3.8509293,
+    "name": "Escuela Infantil Madre Mercedes",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072554,
+    "lat": 43.3834638,
+    "lon": -3.7329027,
+    "name": "Escuela Infantil Papucos",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072563,
+    "lat": 43.4159024,
+    "lon": -3.8468397,
+    "name": "Centro de Educación Infantil y Primaria Pedro Velarde",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072569,
+    "lat": 43.3758697,
+    "lon": -3.8932791,
+    "name": "Centro de Educación Infantil y Primaria Eutiquio Ramos",
+    "type": "infantil"
+  },
+  {
+    "id": 1065072617,
+    "lat": 43.4006228,
+    "lon": -3.8223746,
+    "name": "Colegio Concertado Puente III",
+    "type": "primary-secondary"
+  },
+  {
+    "id": 1117087265,
+    "lat": 43.4177658,
+    "lon": -3.8216053,
+    "name": "Centro Socioeducativo Juvenil de Cantabria",
+    "type": "other"
+  },
+  {
+    "id": 1392540514,
+    "lat": 43.4270654,
+    "lon": -4.0435675,
+    "name": "Colegio de Educación Infantil y Primaria Portus Blendium",
+    "type": "infantil"
+  }
+]

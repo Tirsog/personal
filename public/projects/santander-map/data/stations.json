@@ -1,0 +1,282 @@
+[
+  {
+    "id": 33727552,
+    "lat": 43.444404,
+    "lon": -3.8472394,
+    "name": "Nueva Montaña",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 266131580,
+    "lat": 43.4112444,
+    "lon": -3.7036647,
+    "name": "Villaverde de Pontones",
+    "type": "station",
+    "operator": "Unknown"
+  },
+  {
+    "id": 915443518,
+    "lat": 43.3476778,
+    "lon": -3.9910016,
+    "name": "Zurita",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 3150316666,
+    "lat": 43.4249982,
+    "lon": -3.9604347,
+    "name": "Mogro",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 4547815449,
+    "lat": 43.4534552,
+    "lon": -3.8558009,
+    "name": "Adarzo",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 4955025224,
+    "lat": 43.4352223,
+    "lon": -3.9181991,
+    "name": "Mompía-Mortera",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 4969016461,
+    "lat": 43.4316864,
+    "lon": -3.9463196,
+    "name": "Boo de Piélagos",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 5393997094,
+    "lat": 43.413626,
+    "lon": -3.5770717,
+    "name": "Beranga",
+    "type": "station",
+    "operator": "Unknown"
+  },
+  {
+    "id": 5893228216,
+    "lat": 43.4586539,
+    "lon": -3.8112272,
+    "name": "Santander",
+    "type": "station",
+    "operator": "Adif"
+  },
+  {
+    "id": 13333702371,
+    "lat": 43.4540391,
+    "lon": -3.8278074,
+    "name": "Valdecilla",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6283393015,
+    "lat": 43.4274629,
+    "lon": -3.8404099,
+    "name": "Valle Real",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6283406177,
+    "lat": 43.4161183,
+    "lon": -3.8409624,
+    "name": "Maliaño - La Vidriera",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6283409470,
+    "lat": 43.4039572,
+    "lon": -3.8208987,
+    "name": "Astillero",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6283419316,
+    "lat": 43.3972705,
+    "lon": -3.8148923,
+    "name": "La Cantábrica",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6284885840,
+    "lat": 43.4010459,
+    "lon": -3.7665505,
+    "name": "Heras",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6284896256,
+    "lat": 43.3937311,
+    "lon": -3.8037687,
+    "name": "San Salvador",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6570580746,
+    "lat": 43.440729,
+    "lon": -3.8995722,
+    "name": "Bezana",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 6577768899,
+    "lat": 43.4050227,
+    "lon": -3.6666629,
+    "name": "Hoz de Anero",
+    "type": "station",
+    "operator": "Unknown"
+  },
+  {
+    "id": 8267660124,
+    "lat": 43.3994195,
+    "lon": -3.7381598,
+    "name": "Orejo",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 8738434083,
+    "lat": 43.3449902,
+    "lon": -3.741805,
+    "name": "Liérganes",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 12926284075,
+    "lat": 43.4542471,
+    "lon": -3.8403963,
+    "name": "Cazoña",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 12926284076,
+    "lat": 43.3913314,
+    "lon": -4.0285381,
+    "name": "Requejada",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333702354,
+    "lat": 43.3764575,
+    "lon": -3.7180492,
+    "name": "Ceceñas",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333702357,
+    "lat": 43.4528876,
+    "lon": -3.8282771,
+    "name": "Valdecilla-La Marga",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333702365,
+    "lat": 43.4097995,
+    "lon": -3.98848,
+    "name": "Gornazo",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333702366,
+    "lat": 43.3983014,
+    "lon": -4.0100259,
+    "name": "Mar",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333702385,
+    "lat": 43.3915424,
+    "lon": -3.8595309,
+    "name": "Guarnizo",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333708244,
+    "lat": 43.3767374,
+    "lon": -3.8942431,
+    "name": "Parbayón",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13333752668,
+    "lat": 43.4064154,
+    "lon": -3.7194949,
+    "name": "Puente Agüero",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13335703977,
+    "lat": 43.3506135,
+    "lon": -3.7071716,
+    "name": "La Cavada",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13335703978,
+    "lat": 43.3872288,
+    "lon": -3.731449,
+    "name": "Solares",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13338357082,
+    "lat": 43.353053,
+    "lon": -3.9495092,
+    "name": "Renedo",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13338357083,
+    "lat": 43.3606713,
+    "lon": -3.9648553,
+    "name": "Vioño",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13389024736,
+    "lat": 43.421743,
+    "lon": -3.8441265,
+    "name": "Muriedas-Bahía",
+    "type": "station",
+    "operator": "Renfe"
+  },
+  {
+    "id": 13389024737,
+    "lat": 43.4103997,
+    "lon": -3.841529,
+    "name": "Boo",
+    "type": "station",
+    "operator": "Renfe"
+  }
+]

@@ -11,6 +11,13 @@ export default function Projects() {
                 "A seasonal guide for beekeepers in the UK, tracking key tasks and activities throughout the year.",
             icon: "🐝",
         },
+        {
+            slug: "santander-map",
+            title: "Santander Area Map",
+            description:
+                "Interactive map showing railway stations with 1km walkable radius and train lines around Santander for house hunting.",
+            icon: "🗺️",
+        },
     ]
 
     return (
@@ -34,7 +41,7 @@ export default function Projects() {
                     {projects.map((project) => (
                         <Link
                             key={project.slug}
-                            href={`/${project.slug}`}
+                            href={`/projects/${project.slug}`}
                             className={styles.projectCard}
                         >
                             <div className={styles.projectContent}>

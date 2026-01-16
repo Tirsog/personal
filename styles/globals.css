@@ -134,6 +134,32 @@ a {
     margin: 2rem 0;
 }
 
+.parsed table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+    overflow-x: auto;
+    display: block;
+}
+
+.parsed table thead {
+    background-color: rgba(139, 105, 80, 0.05);
+}
+
+.parsed table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #1f2937;
+    border-bottom: 2px solid rgba(139, 105, 80, 0.2);
+}
+
+.parsed table td {
+    padding: 0.75rem 1rem;
+    color: #374151;
+    border-bottom: 1px solid rgba(139, 105, 80, 0.1);
+}
+
 .parsed strong {
     font-weight: 600;
     color: #1f2937;
@@ -176,6 +202,12 @@ a {
     .parsed blockquote {
         padding-left: 1rem;
         margin: 1rem 0;
+    }
+
+    .parsed table th,
+    .parsed table td {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -229,5 +261,19 @@ a {
 
     .parsed hr {
         border-top-color: rgba(139, 105, 80, 0.3);
+    }
+
+    .parsed table thead {
+        background-color: rgba(139, 105, 80, 0.15);
+    }
+
+    .parsed table th {
+        color: #e5e7eb;
+        border-bottom-color: rgba(139, 105, 80, 0.3);
+    }
+
+    .parsed table td {
+        color: #d1d5db;
+        border-bottom-color: rgba(139, 105, 80, 0.2);
     }
 }

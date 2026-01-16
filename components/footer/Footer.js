@@ -9,7 +9,7 @@ export default function Footer() {
             <div className={styles.container}>
                 <div className={styles.socials}>
                     <a
-                        href="https://twitter.com/tirsog"
+                        href="https://twitter.com/tirsogar"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialLink}

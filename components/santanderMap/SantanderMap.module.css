@@ -1,0 +1,140 @@
+.mapContainer {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.controlLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #1f2937;
+  font-weight: 500;
+  user-select: none;
+}
+
+.controlLabel:hover {
+  color: #2563eb;
+}
+
+.controlCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+.controlDivider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 4px 0;
+}
+
+.controlGroupLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+.statusMessage,
+.errorMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 700px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #4b5563;
+  padding: 2rem;
+  text-align: center;
+}
+
+.errorMessage {
+  gap: 1rem;
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.errorMessage p {
+  margin: 0;
+  max-width: 500px;
+}
+
+.errorMessage button {
+  padding: 0.75rem 2rem;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.errorMessage button:hover {
+  background-color: #b91c1c;
+}
+
+.stats {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.popup h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.popup p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.popupRadius {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  color: #3b82f6;
+  font-weight: 500;
+}
