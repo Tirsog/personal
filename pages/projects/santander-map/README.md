@@ -43,23 +43,9 @@ The map loads data from static JSON files instead of querying the Overpass API i
 
 ### Updating the Data
 
-Railway stations rarely change, but if you need to update the data:
+Railway stations and schools rarely change. The data was fetched on 2026-01-16 and is stored as static JSON files.
 
-1. **Run the fetch script** (in PowerShell):
-   ```powershell
-   node pages/projects/santander-map/fetch-data.js
-   ```
-
-2. **Copy files to public directory**:
-   ```powershell
-   Copy-Item -Path pages/projects/santander-map/data/*.json -Destination public/projects/santander-map/data/ -Force
-   ```
-
-3. **Commit the updated files**:
-   ```powershell
-   git add public/projects/santander-map/data/*.json
-   git commit -m "Update Santander railway data"
-   ```
+If you need to update the data in the future, you can fetch fresh data from OpenStreetMap using [Overpass Turbo](https://overpass-turbo.eu/) with the queries listed above, then manually update the JSON files in `public/projects/santander-map/data/`.
 
 ### Original Overpass Queries
 
