@@ -100,14 +100,65 @@ Note: The codebase previously used SendGrid but has been migrated to Resend. Old
 
 ```
 /components        # Reusable React components (Navbar, Footer, Layout, etc.)
+  /santanderMap    # Santander map components (map visualization)
 /pages            # Next.js pages and API routes
   /api            # API endpoints (resend.js for contact form)
   /articles       # Blog post pages ([slug].js for dynamic routing)
-  /projects       # Individual project pages (bees, etc.)
+  /projects       # Individual project pages
+    /bees         # UK Beekeeper's Calendar project
+    /santander-map # Santander Area Map project with data files
 /posts            # Markdown blog posts
 /styles           # CSS Module files (*.module.css) and globals.css
 /public           # Static assets (images, favicon, etc.)
+  /projects/santander-map/data # Static JSON data for map (stations, railway lines, schools)
 ```
+
+## Projects
+
+### UK Beekeeper's Calendar (`/pages/projects/bees/`)
+
+A seasonal guide for beekeepers in the UK showing monthly tasks, colony states, and bee forage.
+
+- **Tech**: React with state management for tab switching
+- **Data**: Static arrays in component (no external data)
+- **Styling**: CSS Modules with color-coded tabs
+
+### Santander Area Map (`/pages/projects/santander-map/`)
+
+Interactive map tool for house hunting around Santander/El Astillero showing railway stations, train lines, and schools.
+
+**Key Features:**
+- Map centered on El Astillero (43.4045, -3.8156) at zoom 11.5
+- 35 railway stations with 1km walkable radius circles (blue markers)
+- 644 railway lines (red polylines)
+- 179 schools classified by type with color-coded markers:
+  - Cyan: Infantil (Preschool)
+  - Green: Primaria/Secundaria (Combined schools)
+  - Orange: Secundaria (High schools)
+  - Purple: FP (Vocational training)
+  - Gray: Ed. Especial (Special education)
+  - Brown: Adultos (Adult education)
+  - Light Gray: Otros (Other)
+- Toggle controls for layers (railways, stations, individual school types)
+- Default shows: Railways, Stations, Primary-Secondary schools, Secondary schools
+
+**Technical Implementation:**
+- **Mapping**: Leaflet with React-Leaflet (dynamically imported, SSR disabled)
+- **Data Source**: Static JSON files from OpenStreetMap (fetched via Overpass API, saved 2026-01-16)
+- **Data Files**:
+  - `public/projects/santander-map/data/stations.json` (35 stations)
+  - `public/projects/santander-map/data/railway-lines.json` (644 lines)
+  - `public/projects/santander-map/data/schools.json` (179 schools with type classification)
+- **School Classification**: Automated parsing of school names to determine type (Infantil, Primaria, Secundaria, FP, etc.)
+- **Performance**: Instant loading (no API calls), client-side filtering
+- **Validation**: Each school marker popup includes link to verify data on OpenStreetMap
+- **Custom Icons**: SVG icons created programmatically with different colors per school type
+
+**Important Notes:**
+- Leaflet CSS loaded via `<link>` in Head (generates Next.js warning but works)
+- Map component uses dynamic import to avoid SSR issues
+- Scroll zoom speed reduced (wheelPxPerZoomLevel: 120, wheelDebounceTime: 100ms)
+- All data is static - no fetch scripts in the repository (infrastructure rarely changes)
 
 ## Key Technical Details
 

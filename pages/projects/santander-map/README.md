@@ -4,11 +4,13 @@ An interactive map visualization tool to help find houses near railway stations 
 
 ## Overview
 
-This tool helps visualize potential house locations by showing:
-- Railway stations and stops within 20km of Santander
-- 1km walkable radius circles around each station
-- Train lines from OpenStreetMap
-- Interactive station information (name, type, operator)
+This tool helps visualize potential house locations near El Astillero/Santander by showing:
+- 35 railway stations and stops within 20km radius
+- 1km walkable radius circles around each station (blue)
+- 644 train lines from OpenStreetMap (red)
+- 179 schools classified by type with color-coded markers
+- Interactive popups with detailed information
+- Filterable layers for customized views
 
 ## Technical Implementation
 
@@ -20,10 +22,11 @@ This tool helps visualize potential house locations by showing:
 - **Framework**: Next.js with React
 
 ### Architecture
-- Client-side data fetching (no backend required)
-- Dynamic imports for Leaflet (SSR disabled)
-- Real-time data from OpenStreetMap
-- Multiple API endpoint fallbacks for reliability
+- Static JSON data loading (no API calls, instant loading)
+- Dynamic imports for Leaflet (SSR disabled to avoid webpack issues)
+- Client-side filtering and layer toggling
+- Custom SVG icons generated programmatically for different school types
+- Responsive design with scrollable control panel
 
 ## Data Sources
 

@@ -16,8 +16,13 @@ This is a personal website and blog built with Next.js 15, React 19, and CSS Mod
 
 This repository includes several interactive projects. Each project has its own README with detailed documentation:
 
--   **UK Beekeeper's Calendar** (`/pages/projects/bees/`) - Seasonal guide for UK beekeepers
--   **Santander Area Map** (`/pages/projects/santander-map/`) - House hunting tool with railway stations and train lines
+-   **UK Beekeeper's Calendar** (`/pages/projects/bees/`) - Seasonal guide for UK beekeepers with monthly tasks, colony states, and bee forage information
+-   **Santander Area Map** (`/pages/projects/santander-map/`) - Interactive house hunting map centered on El Astillero showing:
+    -   35 railway stations with 1km walkable radius circles
+    -   644 railway lines from OpenStreetMap
+    -   179 schools classified by type (Infantil, Primaria/Secundaria, Secundaria, FP, etc.)
+    -   Color-coded markers and filterable layers
+    -   Static JSON data (no API calls, instant loading)
 
 See individual project folders for detailed documentation.
 
