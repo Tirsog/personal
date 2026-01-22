@@ -5,11 +5,11 @@ import styles from "../styles/Projects.module.css"
 export default function Projects() {
     const projects = [
         {
-            slug: "bees",
-            title: "UK Beekeeper's Calendar",
+            slug: "income-tax",
+            title: "Income Tax Calculator",
             description:
-                "A seasonal guide for beekeepers in the UK, tracking key tasks and activities throughout the year.",
-            icon: "🐝",
+                "Calculate take-home pay for UK and Spain with detailed tax breakdown for 2025/26.",
+            icon: "💰",
         },
         {
             slug: "santander-map",
@@ -18,16 +18,20 @@ export default function Projects() {
                 "Interactive map showing railway stations with 1km walkable radius and train lines around Santander for house hunting.",
             icon: "🗺️",
         },
+        {
+            slug: "bees",
+            title: "UK Beekeeper's Calendar",
+            description:
+                "A seasonal guide for beekeepers in the UK, tracking key tasks and activities throughout the year.",
+            icon: "🐝",
+        },
     ]
 
     return (
         <>
             <Head>
                 <title>Projects - Tirso G.</title>
-                <meta
-                    name="description"
-                    content="Projects by Tirso García"
-                />
+                <meta name="description" content="Projects by Tirso García" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.container}>
