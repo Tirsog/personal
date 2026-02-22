@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from './SantanderMapPage.module.css';
 
-const MapComponent = dynamic(() => import('./SantanderMap'), {
+const MapComponent = dynamic(() => import('../../../components/santanderMap/SantanderMap'), {
   ssr: false,
   loading: () => <div className={styles.loading}>Loading map...</div>
 });
