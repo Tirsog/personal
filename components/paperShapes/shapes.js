@@ -406,16 +406,17 @@ function buildCone() {
   }
   const faces = [sectorFace, circPts]
   const foldLines = []
-  const centroid = getCentroid(faces)
+  const sectorCentroid = getCentroid([sectorFace])
+  const circCenter = [0, ccy]
   const tabEdges = [
-    [apex, arc[0]],
+    { edge: [apex, arc[0]], ref: sectorCentroid },
     ...Array.from({ length: 6 }, (_, i) => {
       const idx = Math.round((i * N) / 6)
       const idx2 = Math.round(((i + 1) * N) / 6) % N
-      return [circPts[idx], circPts[idx2]]
+      return { edge: [circPts[idx], circPts[idx2]], ref: circCenter }
     }),
   ]
-  const tabs = tabEdges.map(([a, b]) => makeTab(a, b, centroid))
+  const tabs = tabEdges.map(({ edge: [a, b], ref }) => makeTab(a, b, ref))
   return normalizeCoords({
     id: "cone",
     name: "Cone",
@@ -453,16 +454,18 @@ function buildCylinder() {
   const circ2 = makeCircle(c2y)
   const faces = [rectFace, circ1, circ2]
   const foldLines = []
-  const centroid = getCentroid(faces)
-  const tabEdges = [[rectFace[1], rectFace[2]]]
-  for (const circ of [circ1, circ2]) {
+  const rectCentroid = getCentroid([rectFace])
+  const circ1Center = [w / 2, c1y]
+  const circ2Center = [w / 2, c2y]
+  const tabEdges = [{ edge: [rectFace[1], rectFace[2]], ref: rectCentroid }]
+  for (const [circ, center] of [[circ1, circ1Center], [circ2, circ2Center]]) {
     for (let i = 0; i < 6; i++) {
       const idx = Math.round((i * N) / 6)
       const idx2 = Math.round(((i + 1) * N) / 6) % N
-      tabEdges.push([circ[idx], circ[idx2]])
+      tabEdges.push({ edge: [circ[idx], circ[idx2]], ref: center })
     }
   }
-  const tabs = tabEdges.map(([a, b]) => makeTab(a, b, centroid))
+  const tabs = tabEdges.map(({ edge: [a, b], ref }) => makeTab(a, b, ref))
   return normalizeCoords({
     id: "cylinder",
     name: "Cylinder",

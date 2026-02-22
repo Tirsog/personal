@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Head from "next/head"
 import Link from "next/link"
-import { shapes } from "./shapes"
+import { shapes } from "../../../components/paperShapes/shapes"
 import NetRenderer from "./NetRenderer"
 import styles from "./PaperShapes.module.css"
 
