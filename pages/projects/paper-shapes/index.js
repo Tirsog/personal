@@ -4,7 +4,7 @@ import { useState } from "react"
 import Head from "next/head"
 import Link from "next/link"
 import { shapes } from "../../../components/paperShapes/shapes"
-import NetRenderer from "./NetRenderer"
+import NetRenderer from "../../../components/paperShapes/NetRenderer"
 import styles from "./PaperShapes.module.css"
 
 export default function PaperShapes() {
