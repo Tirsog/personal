@@ -1,0 +1,296 @@
+.container {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.backButton {
+  display: inline-block;
+  color: #6b7280;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  transition: color 0.2s;
+}
+
+.backButton:hover {
+  color: #1f2937;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.selectorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.shapeCard {
+  padding: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.shapeCard:hover {
+  border-color: #9ca3af;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.shapeCardActive {
+  composes: shapeCard;
+  border-color: #a0826d;
+  background: rgba(160, 130, 109, 0.1);
+}
+
+.shapeCardIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.shapeCardName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+
+.previewSection {
+  margin-bottom: 2rem;
+}
+
+.previewContainer {
+  border: 2px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: white;
+  padding: 1rem;
+  aspect-ratio: 210 / 297;
+  max-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.printButton {
+  padding: 0.75rem 2rem;
+  background: #a0826d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.printButton:hover {
+  background: #8b6950;
+}
+
+.instructions {
+  padding: 1.5rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.instructions h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.75rem;
+}
+
+.instructionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.instructionsList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: #374151;
+}
+
+.legendLine {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  flex-shrink: 0;
+}
+
+.legendSolid {
+  composes: legendLine;
+  background: black;
+}
+
+.legendDashed {
+  composes: legendLine;
+  background: repeating-linear-gradient(
+    90deg,
+    #999 0px,
+    #999 5px,
+    transparent 5px,
+    transparent 10px
+  );
+}
+
+.legendTab {
+  display: inline-block;
+  width: 30px;
+  height: 14px;
+  flex-shrink: 0;
+  background: #e8e8e8;
+  border: 1px solid #666;
+  border-radius: 2px;
+}
+
+.printArea {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .selectorGrid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .previewContainer {
+    max-height: 400px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: #f9fafb;
+  }
+
+  .subtitle {
+    color: #9ca3af;
+  }
+
+  .shapeCard {
+    border-color: #4b5563;
+    background: rgba(31, 41, 55, 0.4);
+  }
+
+  .shapeCard:hover {
+    border-color: #6b7280;
+    background: rgba(31, 41, 55, 0.6);
+  }
+
+  .shapeCardActive {
+    border-color: #a0826d;
+    background: rgba(160, 130, 109, 0.15);
+  }
+
+  .shapeCardName {
+    color: #f9fafb;
+  }
+
+  .shapeCardDesc {
+    color: #9ca3af;
+  }
+
+  .previewContainer {
+    background: #1f2937;
+    border-color: #4b5563;
+  }
+
+  .instructions {
+    border-color: #4b5563;
+    background: rgba(31, 41, 55, 0.4);
+  }
+
+  .instructions h3 {
+    color: #f9fafb;
+  }
+
+  .instructionsList li {
+    color: #d1d5db;
+  }
+
+  .backButton {
+    color: #9ca3af;
+  }
+
+  .backButton:hover {
+    color: #f9fafb;
+  }
+}
+
+@media print {
+  .container {
+    display: none !important;
+  }
+
+  .printArea {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.mapContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rocket {
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}

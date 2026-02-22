@@ -1,0 +1,15 @@
+.visual {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.barChartVisual {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}

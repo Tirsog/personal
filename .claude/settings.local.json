@@ -9,7 +9,10 @@
       "Bash(git commit:*)",
       "Bash(git rm:*)",
       "Bash(node:*)",
-      "Bash(yarn build)"
+      "Bash(yarn build)",
+      "Bash(ls:*)",
+      "Bash(npx next build:*)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../../../styles/SantanderMap.module.css';
+import styles from './SantanderMapPage.module.css';
 
-const MapComponent = dynamic(() => import('../../../components/santanderMap/SantanderMap'), {
+const MapComponent = dynamic(() => import('./SantanderMap'), {
   ssr: false,
   loading: () => <div className={styles.loading}>Loading map...</div>
 });

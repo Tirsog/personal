@@ -25,6 +25,20 @@ export default function Projects() {
                 "A seasonal guide for beekeepers in the UK, tracking key tasks and activities throughout the year.",
             icon: "🐝",
         },
+        {
+            slug: "matelab",
+            title: "MateLab",
+            description:
+                "A space-themed gamified math learning app for kids, covering the UK Year 2 National Curriculum.",
+            icon: "🚀",
+        },
+        {
+            slug: "paper-shapes",
+            title: "3D Paper Shapes",
+            description:
+                "Printable geometric nets with fold lines and glue tabs. Print on A4, cut, fold, and assemble.",
+            icon: "📐",
+        },
     ]
 
     return (
