@@ -1,0 +1,255 @@
+.container {
+    width: 100%;
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.backButton {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #a0826d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.backButton:hover {
+    color: #8b6950;
+}
+
+/* ── Local (UK) clock hero ─────────────────────────────────── */
+
+.localClock {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    border: 2px solid #a0826d;
+}
+
+.localHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.localFlag {
+    font-size: 2rem;
+}
+
+.localLabel {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    font-weight: 500;
+}
+
+.localTime {
+    font-size: 7rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.localDate {
+    font-size: 1rem;
+    color: #9ca3af;
+    min-height: 1.5rem;
+}
+
+/* ── Cards – 2×2 grid, horizontal layout inside each card ──── */
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #a0826d;
+    border-radius: 1rem;
+    padding: 1.25rem 1.375rem;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #8b6950;
+    transform: translateY(-2px);
+}
+
+.cardFlag {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.cardMeta {
+    flex: 1;
+    min-width: 0;
+}
+
+.cardLabel {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.cardCity {
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardRight {
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.cardTime {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.cardOffset {
+    display: inline-block;
+    padding: 0.2rem 0.625rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.ahead {
+    background: rgba(16, 185, 129, 0.15);
+    color: #065f46;
+}
+
+.behind {
+    background: rgba(245, 158, 11, 0.15);
+    color: #92400e;
+}
+
+.same {
+    background: rgba(107, 114, 128, 0.15);
+    color: #374151;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .localClock {
+        padding: 2.25rem 1.25rem;
+    }
+
+    .localTime {
+        font-size: 4.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+        gap: 0.625rem;
+    }
+
+    .cardTime {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .localTime {
+        font-size: 3.5rem;
+    }
+}
+
+.dstNote {
+    margin-top: 1rem;
+    font-size: 0.8125rem;
+    color: #6b7280;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ── Dark mode ─────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+    .localClock {
+        background: linear-gradient(
+            135deg,
+            #0d0d1a 0%,
+            #0a1525 50%,
+            #071e40 100%
+        );
+    }
+
+    .card {
+        background: rgba(31, 41, 55, 0.4);
+        border-color: #8b6950;
+    }
+
+    .card:hover {
+        background: rgba(31, 41, 55, 0.6);
+        border-color: #b89968;
+    }
+
+    .cardLabel {
+        color: #f9fafb;
+    }
+
+    .cardCity {
+        color: #9ca3af;
+    }
+
+    .cardTime {
+        color: #f9fafb;
+    }
+
+    .cardDayDiff {
+        color: #9ca3af;
+    }
+
+    .ahead {
+        background: rgba(16, 185, 129, 0.2);
+        color: #34d399;
+    }
+
+    .behind {
+        background: rgba(245, 158, 11, 0.2);
+        color: #fbbf24;
+    }
+
+    .same {
+        background: rgba(107, 114, 128, 0.2);
+        color: #d1d5db;
+    }
+
+    .dstNote {
+        color: #6b7280;
+    }
+}

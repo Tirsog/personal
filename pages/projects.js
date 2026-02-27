@@ -5,6 +5,13 @@ import styles from "../styles/Projects.module.css"
 export default function Projects() {
     const projects = [
         {
+            slug: "world-clock",
+            title: "World Clock",
+            description:
+                "Personal timezone dashboard showing live local times across UK, Spain, Poland, Argentina and the US, with DST support and UK offset indicators.",
+            icon: "🌍",
+        },
+        {
             slug: "income-tax",
             title: "Income Tax Calculator",
             description:

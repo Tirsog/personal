@@ -29,9 +29,10 @@ const SPAIN_TAX_BRACKETS = [
   { min: 300001, max: Infinity, rate: 0.47, name: "Tramo 6" }
 ]
 
-const SPAIN_SS_RATE = 0.0635  // 6.35% employee contribution
-const SPAIN_SS_MAX_BASE = 53400  // Maximum contribution base for 2025
-const SPAIN_PERSONAL_MINIMUM = 5550  // Mínimo personal 2025
+const SPAIN_SS_RATE = 0.0635          // 6.35% employee contribution
+const SPAIN_EMPLOYER_SS_RATE = 0.299  // 29.9% employer: CC 23.6% + Desempleo 5.5% + FOGASA 0.2% + FP 0.6%
+const SPAIN_SS_MAX_BASE = 53400       // Maximum contribution base for 2025
+const SPAIN_PERSONAL_MINIMUM = 5550   // Mínimo personal 2025
 
 // Calculate work income reduction (reducción por rendimientos del trabajo)
 const calculateWorkReduction = (netIncome) => {
@@ -157,6 +158,12 @@ export default function IncomeTaxCalculator() {
     const netMonthly = netAnnual / 12
     const grossMonthly = salary / 12
 
+    // Employer cost (what the company actually pays)
+    const employerSSBase = Math.min(salary, SPAIN_SS_MAX_BASE)
+    const employerSS = employerSSBase * SPAIN_EMPLOYER_SS_RATE
+    const employerCost = salary + employerSS
+    const employerCostMonthly = employerCost / 12
+
     return {
       country: "spain",
       currency: "€",
@@ -167,7 +174,10 @@ export default function IncomeTaxCalculator() {
       totalDeductions: totalDeductions,
       netAnnual: netAnnual,
       netMonthly: netMonthly,
-      taxBrackets: taxBrackets
+      taxBrackets: taxBrackets,
+      employerSS: employerSS,
+      employerCost: employerCost,
+      employerCostMonthly: employerCostMonthly,
     }
   }
 
@@ -363,7 +373,26 @@ export default function IncomeTaxCalculator() {
               <div className={styles.resultsCard}>
                 <h2 className={styles.resultsTitle}>{labels.resultsTitle}</h2>
 
-                <div className={styles.resultsGrid}>
+                <div className={`${styles.resultsGrid} ${results.country === "spain" ? styles.resultsGridSpain : ""}`}>
+                  {/* Employer cost – Spain only */}
+                  {results.country === "spain" && (
+                    <div className={`${styles.resultItem} ${styles.employerCostItem}`}>
+                      <div className={styles.resultLabel}>Coste empresa</div>
+                      <div className={`${styles.resultValue} ${styles.employerCostValue}`}>
+                        {formatCurrency(results.employerCost, results.country)}
+                      </div>
+                      <div className={styles.resultMonthly}>
+                        {formatCurrency(results.employerCostMonthly, results.country)}/mes
+                      </div>
+                      <div className={styles.deductionBreakdown}>
+                        <div className={styles.deductionItem}>
+                          <span>SS empresa:</span>
+                          <span>{formatCurrency(results.employerSS, results.country)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Gross */}
                   <div className={styles.resultItem}>
                     <div className={styles.resultLabel}>{labels.grossLabel}</div>

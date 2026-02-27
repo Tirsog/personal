@@ -223,6 +223,19 @@
   gap: 1rem;
 }
 
+.resultsGridSpain {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.employerCostItem {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 2px solid #3b82f6;
+}
+
+.employerCostValue {
+  color: #1d4ed8;
+}
+
 .resultItem {
   text-align: center;
   padding: 1rem;

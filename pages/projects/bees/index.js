@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Head from "next/head"
 import Link from "next/link"
 import styles from "../../../styles/Bees.module.css"
 
@@ -481,7 +482,16 @@ export default function BeekeeperCalendar() {
     ]
 
     return (
-        <div className={styles.pageContainer}>
+        <>
+            <Head>
+                <title>UK Beekeeper's Calendar - Tirso G.</title>
+                <meta
+                    name="description"
+                    content="A comprehensive seasonal guide for beekeepers in the UK, tracking key tasks, colony state, and available forage throughout the year."
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <div className={styles.pageContainer}>
             <div className={styles.container}>
                 {/* Back Button */}
                 <Link href="/projects" className={styles.backButton}>
@@ -497,17 +507,11 @@ export default function BeekeeperCalendar() {
                         <p className={styles.projectDescription}>
                             A comprehensive seasonal guide for beekeepers in the UK, tracking key tasks, colony state, and available forage throughout the year. Based on the British Beekeeping Association's yearly work guidelines.
                         </p>
+                        <p className={styles.projectAttribution}>
+                            Based on A YEAR'S WORK — Z REVISION TOPIC 1.14
+                        </p>
                     </div>
-                    <div className={styles.projectIconLarge}>
-                        🐝
-                    </div>
-                </div>
-
-                {/* Original Header */}
-                <div className={styles.header}>
-                    <p className={styles.headerSubtitle}>
-                        Based on A YEAR´S WORK - Z REVISION TOPIC 1.14
-                    </p>
+                    <div className={styles.projectIconLarge}>🐝</div>
                 </div>
 
                 {/* Tabs */}
@@ -670,5 +674,6 @@ export default function BeekeeperCalendar() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
