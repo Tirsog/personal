@@ -63,6 +63,12 @@
     }
 }
 
+@media print {
+    .navbar {
+        display: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .navbar {
         border-bottom-color: rgba(139, 105, 80, 0.3);

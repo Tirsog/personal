@@ -12,7 +12,10 @@
       "Bash(yarn build)",
       "Bash(ls:*)",
       "Bash(npx next build:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:www.wikipedia.org)"
     ],
     "deny": [],
     "ask": []

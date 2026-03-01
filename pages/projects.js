@@ -46,6 +46,13 @@ export default function Projects() {
                 "Printable geometric nets with fold lines and glue tabs. Print on A4, cut, fold, and assemble.",
             icon: "📐",
         },
+        {
+            slug: "car-brands",
+            title: "Car Brands – Learn to Read",
+            description:
+                "A printable visual guide showing car brand logos with their names in uppercase and normal case, to help kids learn to read.",
+            icon: "🚗",
+        },
     ]
 
     return (
