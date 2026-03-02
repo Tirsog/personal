@@ -9,10 +9,10 @@ const brandList = [
     { name: "BMW",         files: ["BMW.svg"] },
     { name: "Audi",        files: ["Audi-Logo_2016.svg"] },
     { name: "Jeep",        files: ["Jeepnewlogo.svg", "Jeep_logo.svg"] },
-    { name: "Honda",       files: ["Honda_Logo.svg"] },
+    { name: "Honda",       files: ["Honda_new_h_mark.svg"] },
     { name: "Toyota",      files: ["Toyota_carlogo.svg"] },
     { name: "Nissan",      files: ["Nissan_2020_logo.svg"] },
-    { name: "Mazda",       files: ["Mazda_logo.svg"] },
+    { name: "Skoda",       files: ["Škoda Auto.svg"] },
     // Vauxhall SVG lives on en.wikipedia (not Commons) — use direct URL
     { name: "Vauxhall",    url: "https://upload.wikimedia.org/wikipedia/en/1/18/Vauxhall_logo_2019.svg" },
     { name: "Tesla",       files: ["Tesla_Motors.svg"] },
@@ -21,7 +21,8 @@ const brandList = [
     { name: "Lexus",       files: ["Lexus_logo.svg"] },
     { name: "Hyundai",     files: ["Hyundai_Motor_Company_logo.svg"] },
     { name: "Renault",     files: ["Renault_2021_Text.svg", "Renault_2009_logo.svg"] },
-    { name: "Peugeot",     files: ["Peugeot_Logo.svg", "Peugeot_logo.svg"] },
+    // Peugeot lion crest is on en.wikipedia (not Commons) — use direct URL
+    { name: "Peugeot",     url: "https://upload.wikimedia.org/wikipedia/en/9/9d/Peugeot_2021_Logo.svg" },
     { name: "Volkswagen",  files: ["Volkswagen_logo_2019.svg"] },
     { name: "Mitsubishi",  files: ["Mitsubishi_motors_new_logo.svg", "Mitsubishi_Motors_SVG_logo.svg"] },
     { name: "Seat",        files: ["SEAT_Logo_from_2017.svg", "SEAT_S.A._logo.svg"] },
