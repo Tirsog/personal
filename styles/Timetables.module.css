@@ -1,0 +1,159 @@
+/* Controls bar */
+.controls {
+    padding: 1.25rem 1.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-right: auto;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.toggle input {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    accent-color: #333;
+}
+
+.printBtn {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.printBtn:hover {
+    background: #000;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 0.5rem 1.5rem 2rem;
+}
+
+.table {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableTitle {
+    background: #222;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.4rem 0;
+    flex-shrink: 0;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.row {
+    padding: 0.2rem 0.75rem;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #f0f0f0;
+    color: #111;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+
+/* ── Print ──────────────────────────────────────── */
+@media print {
+    /*
+     * @page margin must clear the browser's own header/footer lines.
+     * Chrome renders title+URL at ~top 10mm, page+date at ~bottom 10mm.
+     * Using 14mm top/bottom leaves a comfortable gap.
+     * Usable height: 210mm - 14mm - 14mm = 182mm
+     */
+    @page {
+        size: A4 landscape;
+        margin: 14mm 6mm;
+    }
+
+    .controls {
+        display: none !important;
+    }
+
+    .grid {
+        gap: 2mm;
+        padding: 0;
+        /* fill the usable height exactly */
+        height: 182mm;
+        grid-template-rows: repeat(2, 1fr);
+        overflow: hidden;
+    }
+
+    .table {
+        border: 0.5pt solid #aaa;
+        border-radius: 2pt;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tableTitle {
+        background: #222 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: #fff !important;
+        font-size: 11pt;
+        font-weight: 700;
+        padding: 2pt 0;
+        flex-shrink: 0;
+    }
+
+    .rows {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 4pt;
+        font-size: 10pt;
+        border-bottom: 0.3pt solid #ddd;
+    }
+
+    .row:last-child {
+        border-bottom: none;
+    }
+
+}

@@ -53,6 +53,13 @@ export default function Projects() {
                 "A printable visual guide showing car brand logos with their names in uppercase and normal case, to help kids learn to read.",
             icon: "🚗",
         },
+        {
+            slug: "timetables",
+            title: "Multiplication Timetables",
+            description:
+                "Printable multiplication tables from 1 to 10. Toggle answers on or off — print blank for practice or filled for memorisation.",
+            icon: "✖️",
+        },
     ]
 
     return (
