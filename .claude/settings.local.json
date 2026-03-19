@@ -39,7 +39,8 @@
       "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&titles=File:Skoda-Auto-Logo-2011-present.svg&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=300&format=json\" -A \"Mozilla/5.0\")",
       "Bash(curl -s \"https://commons.wikimedia.org/w/api.php?action=query&titles=File:%C5%A0koda_Auto.svg&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=300&format=json\" -A \"Mozilla/5.0\")",
       "Bash(python3 -c \"import sys,json; wt=json.load\\(sys.stdin\\)[''parse''][''wikitext''][''*'']; [print\\(l\\) for l in wt.split\\(''\\\\n''\\) if ''logo'' in l.lower\\(\\) or ''image'' in l.lower\\(\\)][:20]\")",
-      "Bash(curl -s \"https://en.wikipedia.org/w/api.php?action=parse&page=%C5%A0koda_Auto&prop=wikitext&section=0&format=json\" -A \"Mozilla/5.0\")"
+      "Bash(curl -s \"https://en.wikipedia.org/w/api.php?action=parse&page=%C5%A0koda_Auto&prop=wikitext&section=0&format=json\" -A \"Mozilla/5.0\")",
+      "Bash(yarn list:*)"
     ],
     "deny": [],
     "ask": []

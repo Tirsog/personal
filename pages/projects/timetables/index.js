@@ -30,19 +30,17 @@ export default function Timetables() {
 
             <div className={styles.controls}>
                 <h1 className={styles.title}>Multiplication Tables</h1>
-                <div className={styles.controlsRow}>
-                    <label className={styles.toggle}>
-                        <input
-                            type="checkbox"
-                            checked={showAnswers}
-                            onChange={(e) => setShowAnswers(e.target.checked)}
-                        />
-                        <span>Show answers</span>
-                    </label>
-                    <button className={styles.printBtn} onClick={handlePrint}>
-                        Print / Save as PDF
-                    </button>
-                </div>
+                <label className={styles.toggle}>
+                    <input
+                        type="checkbox"
+                        checked={showAnswers}
+                        onChange={(e) => setShowAnswers(e.target.checked)}
+                    />
+                    <span>Show answers</span>
+                </label>
+                <button className={styles.printBtn} onClick={handlePrint}>
+                    Print / Save as PDF
+                </button>
             </div>
 
             <div className={styles.grid}>
