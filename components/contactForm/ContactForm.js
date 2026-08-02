@@ -43,7 +43,6 @@ export default function ContactForm() {
                 body: JSON.stringify({
                     email: email,
                     fullname: fullname,
-                    subject: "Contact Form Message",
                     message: message,
                 }),
                 headers: {
@@ -56,7 +55,7 @@ export default function ContactForm() {
 
             if (!res.ok || data.error) {
                 setSubmitStatus("error")
-                setSubmitMessage(data.error || "Failed to send message. Please check your SendGrid configuration.")
+                setSubmitMessage(data.error || "Failed to send message. Please try again later.")
                 setIsSubmitting(false)
                 return
             }
