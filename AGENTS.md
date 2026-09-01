@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents when working with code in this repository.
 
 ## Project Overview
 
@@ -31,13 +31,13 @@ Note: The build process automatically runs `next-sitemap` as a postbuild step to
 
 ## Development Environment
 
-**Platform:** Windows with WSL2
+**Platform:** Windows (WSL2 available)
 
 **IMPORTANT:** When running commands or providing command suggestions:
 - **Always advise the user to run commands in PowerShell**, not WSL bash
 - File operations (removing node_modules, lock files, etc.) should be done in PowerShell using `Remove-Item` commands
-- Only use the Bash tool for git operations and simple file reads
-- Never use the Bash tool for package management or file operations that modify node_modules
+- The agent must never run git commands — the user runs all git operations himself in PowerShell
+- The agent should not run package management commands or file operations that modify node_modules; suggest them for the user to run in PowerShell instead
 
 ### Common Issues
 
